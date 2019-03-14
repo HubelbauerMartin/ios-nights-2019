@@ -1,0 +1,15 @@
+//
+//  Development.xcconfig
+//  iOSNights2019
+//
+//  Created by Jan Kaltoun on 14/02/2019.
+//  Copyright © 2019 STRV. All rights reserved.
+//
+
+// Configuration settings file format documentation can be found at:
+// https://help.apple.com/xcode/#/dev745c5c974
+
+APP_BUNDLE_NAME = iOS Nights (DEV)
+APP_BUNDLE_IDENTIFIER = enterprise.com.strv.iOSNights2019.dev
+
+API_BASE_URL = http:/$()/api.development.url
