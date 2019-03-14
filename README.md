@@ -31,6 +31,9 @@ Learn Swift basics that you will need to start with the app development
 
 Set up project in Xcode and learn about build process
 
+- [Materials](02-Xcode)
+- [Slides & Homework](02-Xcode/Slides)
+
 ### 3. Basic UIKit
 
 Get into UI development basics and create you first app screen
