@@ -540,7 +540,7 @@
 /* Begin XCBuildConfiguration section */
 		2F24BB2522442CEB00472E44 /* Debug (Production) */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 2FB7A61E221569B4004E6911 /* Development.xcconfig */;
+			baseConfigurationReference = 2FB7A622221569CE004E6911 /* Production.xcconfig */;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_ANALYZER_NONNULL = YES;
@@ -665,7 +665,7 @@
 		};
 		2F24BB2922442CF800472E44 /* Release (Production) */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 2FB7A61E221569B4004E6911 /* Development.xcconfig */;
+			baseConfigurationReference = 2FB7A622221569CE004E6911 /* Production.xcconfig */;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_ANALYZER_NONNULL = YES;
