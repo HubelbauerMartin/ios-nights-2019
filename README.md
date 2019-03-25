@@ -38,6 +38,9 @@ Set up project in Xcode and learn about build process
 
 Get into UI development basics and create you first app screen
 
+- [Materials](Resources)
+- [Slides](03-Basic-UIKit)
+
 ### 4. Intermediate UIKit
 
 Navigate user through your app according to human interface guidelines

@@ -1,0 +1,905 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		2FB7A5DE2215610F004E6911 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FB7A5DD2215610F004E6911 /* AppDelegate.swift */; };
+		2FB7A5E522156110004E6911 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2FB7A5E422156110004E6911 /* Assets.xcassets */; };
+		2FB7A5E822156110004E6911 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2FB7A5E622156110004E6911 /* LaunchScreen.storyboard */; };
+		2FB7A5F322156110004E6911 /* ExampleiOSNights2019Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FB7A5F222156110004E6911 /* ExampleiOSNights2019Tests.swift */; };
+		2FB7A5FE22156110004E6911 /* ExampleiOSNights2019UITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FB7A5FD22156110004E6911 /* ExampleiOSNights2019UITests.swift */; };
+		2FB7A62722156D8B004E6911 /* EnvironmentConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FB7A62622156D8B004E6911 /* EnvironmentConfiguration.swift */; };
+		2FB7A62D2215BD3D004E6911 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FB7A62C2215BD3D004E6911 /* LoginViewController.swift */; };
+		4BEF704522440F01000FCAF2 /* Maison Neue Book.otf in Resources */ = {isa = PBXBuildFile; fileRef = 4BEF704022440F01000FCAF2 /* Maison Neue Book.otf */; };
+		4BEF704622440F01000FCAF2 /* Maison Neue Bold.otf in Resources */ = {isa = PBXBuildFile; fileRef = 4BEF704122440F01000FCAF2 /* Maison Neue Bold.otf */; };
+		4BEF704722440F01000FCAF2 /* Maison Neue Demi.otf in Resources */ = {isa = PBXBuildFile; fileRef = 4BEF704222440F01000FCAF2 /* Maison Neue Demi.otf */; };
+		4BEF704822440F01000FCAF2 /* trump_gothic_east_bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 4BEF704322440F01000FCAF2 /* trump_gothic_east_bold.ttf */; };
+		4BEF704922440F01000FCAF2 /* Maison Neue Medium.otf in Resources */ = {isa = PBXBuildFile; fileRef = 4BEF704422440F01000FCAF2 /* Maison Neue Medium.otf */; };
+		4BF302C8224412D50058E3F3 /* TextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BF302C7224412D50058E3F3 /* TextField.swift */; };
+		4BF302CB2244164A0058E3F3 /* UIColorExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BF302CA2244164A0058E3F3 /* UIColorExtension.swift */; };
+		4BF302CD22441F260058E3F3 /* DoneButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BF302CC22441F260058E3F3 /* DoneButton.swift */; };
+		4BF302D1224420170058E3F3 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 4BF302D3224420170058E3F3 /* Localizable.strings */; };
+		4BF302D5224420CE0058E3F3 /* LoginViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4BF302D7224420CE0058E3F3 /* LoginViewController.storyboard */; };
+		509A210404B39693543208BB /* Pods_defaults_iOSNights2019UITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 174CB4194E7142415953F0FC /* Pods_defaults_iOSNights2019UITests.framework */; };
+		929526C50E148D989230183D /* Pods_defaults_iOSNights2019Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 935DD72DA430006C5390863A /* Pods_defaults_iOSNights2019Tests.framework */; };
+		CFE15F394C9607A9EA86E1F8 /* Pods_defaults_iOSNights2019.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2AF48D62078DB73F99202276 /* Pods_defaults_iOSNights2019.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		2FB7A5EF22156110004E6911 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 2FB7A5D22215610F004E6911 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 2FB7A5D92215610F004E6911;
+			remoteInfo = iOSNights2019;
+		};
+		2FB7A5FA22156110004E6911 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 2FB7A5D22215610F004E6911 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 2FB7A5D92215610F004E6911;
+			remoteInfo = iOSNights2019;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		06BC4E866638E46E7D08E0C0 /* Pods-defaults-iOSNights2019UITests.release (production).xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-defaults-iOSNights2019UITests.release (production).xcconfig"; path = "Pods/Target Support Files/Pods-defaults-iOSNights2019UITests/Pods-defaults-iOSNights2019UITests.release (production).xcconfig"; sourceTree = "<group>"; };
+		1098B34FD0D54AFD33DE7981 /* Pods-defaults-iOSNights2019Tests.debug (development).xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-defaults-iOSNights2019Tests.debug (development).xcconfig"; path = "Pods/Target Support Files/Pods-defaults-iOSNights2019Tests/Pods-defaults-iOSNights2019Tests.debug (development).xcconfig"; sourceTree = "<group>"; };
+		174CB4194E7142415953F0FC /* Pods_defaults_iOSNights2019UITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_defaults_iOSNights2019UITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		175FB0B9AE4DC19A347A92E0 /* Pods-defaults-iOSNights2019UITests.debug (development).xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-defaults-iOSNights2019UITests.debug (development).xcconfig"; path = "Pods/Target Support Files/Pods-defaults-iOSNights2019UITests/Pods-defaults-iOSNights2019UITests.debug (development).xcconfig"; sourceTree = "<group>"; };
+		2AF48D62078DB73F99202276 /* Pods_defaults_iOSNights2019.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_defaults_iOSNights2019.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		2DA0C7FF30FBAFF15911FBA9 /* Pods-defaults-iOSNights2019UITests.release (development).xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-defaults-iOSNights2019UITests.release (development).xcconfig"; path = "Pods/Target Support Files/Pods-defaults-iOSNights2019UITests/Pods-defaults-iOSNights2019UITests.release (development).xcconfig"; sourceTree = "<group>"; };
+		2F164B010F0A235079D38ECA /* Pods-defaults-iOSNights2019.debug (development).xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-defaults-iOSNights2019.debug (development).xcconfig"; path = "Pods/Target Support Files/Pods-defaults-iOSNights2019/Pods-defaults-iOSNights2019.debug (development).xcconfig"; sourceTree = "<group>"; };
+		2FB7A5DA2215610F004E6911 /* iOSNights2019.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iOSNights2019.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		2FB7A5DD2215610F004E6911 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		2FB7A5E422156110004E6911 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		2FB7A5E722156110004E6911 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		2FB7A5E922156110004E6911 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2FB7A5EE22156110004E6911 /* iOSNights2019Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = iOSNights2019Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		2FB7A5F222156110004E6911 /* ExampleiOSNights2019Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExampleiOSNights2019Tests.swift; sourceTree = "<group>"; };
+		2FB7A5F422156110004E6911 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2FB7A5F922156110004E6911 /* iOSNights2019UITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = iOSNights2019UITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		2FB7A5FD22156110004E6911 /* ExampleiOSNights2019UITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExampleiOSNights2019UITests.swift; sourceTree = "<group>"; };
+		2FB7A5FF22156110004E6911 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2FB7A61E221569B4004E6911 /* Development.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Development.xcconfig; sourceTree = "<group>"; };
+		2FB7A622221569CE004E6911 /* Production.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Production.xcconfig; sourceTree = "<group>"; };
+		2FB7A62622156D8B004E6911 /* EnvironmentConfiguration.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EnvironmentConfiguration.swift; sourceTree = "<group>"; };
+		2FB7A62C2215BD3D004E6911 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		4BEF704022440F01000FCAF2 /* Maison Neue Book.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Maison Neue Book.otf"; sourceTree = "<group>"; };
+		4BEF704122440F01000FCAF2 /* Maison Neue Bold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Maison Neue Bold.otf"; sourceTree = "<group>"; };
+		4BEF704222440F01000FCAF2 /* Maison Neue Demi.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Maison Neue Demi.otf"; sourceTree = "<group>"; };
+		4BEF704322440F01000FCAF2 /* trump_gothic_east_bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = trump_gothic_east_bold.ttf; sourceTree = "<group>"; };
+		4BEF704422440F01000FCAF2 /* Maison Neue Medium.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Maison Neue Medium.otf"; sourceTree = "<group>"; };
+		4BF302C7224412D50058E3F3 /* TextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextField.swift; sourceTree = "<group>"; };
+		4BF302CA2244164A0058E3F3 /* UIColorExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIColorExtension.swift; sourceTree = "<group>"; };
+		4BF302CC22441F260058E3F3 /* DoneButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DoneButton.swift; sourceTree = "<group>"; };
+		4BF302CE22441FCB0058E3F3 /* cs */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = cs; path = cs.lproj/LaunchScreen.strings; sourceTree = "<group>"; };
+		4BF302D2224420170058E3F3 /* cs */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = cs; path = cs.lproj/Localizable.strings; sourceTree = "<group>"; };
+		4BF302D42244201B0058E3F3 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
+		4BF302D6224420CE0058E3F3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LoginViewController.storyboard; sourceTree = "<group>"; };
+		4BF302D9224420D90058E3F3 /* cs */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = cs; path = cs.lproj/LoginViewController.strings; sourceTree = "<group>"; };
+		72AB6CAD55FD2816AF6D9488 /* Pods-defaults-iOSNights2019.release (production).xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-defaults-iOSNights2019.release (production).xcconfig"; path = "Pods/Target Support Files/Pods-defaults-iOSNights2019/Pods-defaults-iOSNights2019.release (production).xcconfig"; sourceTree = "<group>"; };
+		935DD72DA430006C5390863A /* Pods_defaults_iOSNights2019Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_defaults_iOSNights2019Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		9BBF92805D66902483759E86 /* Pods-defaults-iOSNights2019Tests.debug (production).xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-defaults-iOSNights2019Tests.debug (production).xcconfig"; path = "Pods/Target Support Files/Pods-defaults-iOSNights2019Tests/Pods-defaults-iOSNights2019Tests.debug (production).xcconfig"; sourceTree = "<group>"; };
+		A42D3A7E684E7595BA61C10B /* Pods-defaults-iOSNights2019UITests.debug (production).xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-defaults-iOSNights2019UITests.debug (production).xcconfig"; path = "Pods/Target Support Files/Pods-defaults-iOSNights2019UITests/Pods-defaults-iOSNights2019UITests.debug (production).xcconfig"; sourceTree = "<group>"; };
+		C0777C29FF8981738D53E485 /* Pods-defaults-iOSNights2019Tests.release (production).xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-defaults-iOSNights2019Tests.release (production).xcconfig"; path = "Pods/Target Support Files/Pods-defaults-iOSNights2019Tests/Pods-defaults-iOSNights2019Tests.release (production).xcconfig"; sourceTree = "<group>"; };
+		CC0182B2883044F22F861ECC /* Pods-defaults-iOSNights2019Tests.release (development).xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-defaults-iOSNights2019Tests.release (development).xcconfig"; path = "Pods/Target Support Files/Pods-defaults-iOSNights2019Tests/Pods-defaults-iOSNights2019Tests.release (development).xcconfig"; sourceTree = "<group>"; };
+		E0CDD5417EA4B20A1D9064B9 /* Pods-defaults-iOSNights2019.release (development).xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-defaults-iOSNights2019.release (development).xcconfig"; path = "Pods/Target Support Files/Pods-defaults-iOSNights2019/Pods-defaults-iOSNights2019.release (development).xcconfig"; sourceTree = "<group>"; };
+		EAC2F9FED5E212B7D62C8798 /* Pods-defaults-iOSNights2019.debug (production).xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-defaults-iOSNights2019.debug (production).xcconfig"; path = "Pods/Target Support Files/Pods-defaults-iOSNights2019/Pods-defaults-iOSNights2019.debug (production).xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		2FB7A5D72215610F004E6911 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CFE15F394C9607A9EA86E1F8 /* Pods_defaults_iOSNights2019.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2FB7A5EB22156110004E6911 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				929526C50E148D989230183D /* Pods_defaults_iOSNights2019Tests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2FB7A5F622156110004E6911 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				509A210404B39693543208BB /* Pods_defaults_iOSNights2019UITests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		243292BED643C74EEDA0696E /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				2F164B010F0A235079D38ECA /* Pods-defaults-iOSNights2019.debug (development).xcconfig */,
+				EAC2F9FED5E212B7D62C8798 /* Pods-defaults-iOSNights2019.debug (production).xcconfig */,
+				E0CDD5417EA4B20A1D9064B9 /* Pods-defaults-iOSNights2019.release (development).xcconfig */,
+				72AB6CAD55FD2816AF6D9488 /* Pods-defaults-iOSNights2019.release (production).xcconfig */,
+				1098B34FD0D54AFD33DE7981 /* Pods-defaults-iOSNights2019Tests.debug (development).xcconfig */,
+				9BBF92805D66902483759E86 /* Pods-defaults-iOSNights2019Tests.debug (production).xcconfig */,
+				CC0182B2883044F22F861ECC /* Pods-defaults-iOSNights2019Tests.release (development).xcconfig */,
+				C0777C29FF8981738D53E485 /* Pods-defaults-iOSNights2019Tests.release (production).xcconfig */,
+				175FB0B9AE4DC19A347A92E0 /* Pods-defaults-iOSNights2019UITests.debug (development).xcconfig */,
+				A42D3A7E684E7595BA61C10B /* Pods-defaults-iOSNights2019UITests.debug (production).xcconfig */,
+				2DA0C7FF30FBAFF15911FBA9 /* Pods-defaults-iOSNights2019UITests.release (development).xcconfig */,
+				06BC4E866638E46E7D08E0C0 /* Pods-defaults-iOSNights2019UITests.release (production).xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		2FB7A5D12215610F004E6911 = {
+			isa = PBXGroup;
+			children = (
+				2FB7A61D22156993004E6911 /* Configurations */,
+				2FB7A5DC2215610F004E6911 /* iOSNights2019 */,
+				2FB7A5F122156110004E6911 /* iOSNights2019Tests */,
+				2FB7A5FC22156110004E6911 /* iOSNights2019UITests */,
+				2FB7A5DB2215610F004E6911 /* Products */,
+				243292BED643C74EEDA0696E /* Pods */,
+				3227BECE4ECD9B0B0682EA80 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		2FB7A5DB2215610F004E6911 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				2FB7A5DA2215610F004E6911 /* iOSNights2019.app */,
+				2FB7A5EE22156110004E6911 /* iOSNights2019Tests.xctest */,
+				2FB7A5F922156110004E6911 /* iOSNights2019UITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		2FB7A5DC2215610F004E6911 /* iOSNights2019 */ = {
+			isa = PBXGroup;
+			children = (
+				2FB7A6302215C0EE004E6911 /* Common */,
+				2FB7A6342215C168004E6911 /* Dependency Injection */,
+				2FB7A6332215C11F004E6911 /* API */,
+				2FB7A6312215C0F5004E6911 /* Models */,
+				2FB7A62A2215BD1A004E6911 /* Scenes */,
+				2FB7A5DD2215610F004E6911 /* AppDelegate.swift */,
+				2FB7A5E422156110004E6911 /* Assets.xcassets */,
+				2FB7A5E622156110004E6911 /* LaunchScreen.storyboard */,
+				2FB7A5E922156110004E6911 /* Info.plist */,
+				2FB7A62622156D8B004E6911 /* EnvironmentConfiguration.swift */,
+				4BF302D3224420170058E3F3 /* Localizable.strings */,
+				4BEF703D22440ED8000FCAF2 /* Resources */,
+			);
+			path = iOSNights2019;
+			sourceTree = "<group>";
+		};
+		2FB7A5F122156110004E6911 /* iOSNights2019Tests */ = {
+			isa = PBXGroup;
+			children = (
+				2FB7A5F222156110004E6911 /* ExampleiOSNights2019Tests.swift */,
+				2FB7A5F422156110004E6911 /* Info.plist */,
+			);
+			path = iOSNights2019Tests;
+			sourceTree = "<group>";
+		};
+		2FB7A5FC22156110004E6911 /* iOSNights2019UITests */ = {
+			isa = PBXGroup;
+			children = (
+				2FB7A5FD22156110004E6911 /* ExampleiOSNights2019UITests.swift */,
+				2FB7A5FF22156110004E6911 /* Info.plist */,
+			);
+			path = iOSNights2019UITests;
+			sourceTree = "<group>";
+		};
+		2FB7A61D22156993004E6911 /* Configurations */ = {
+			isa = PBXGroup;
+			children = (
+				2FB7A61E221569B4004E6911 /* Development.xcconfig */,
+				2FB7A622221569CE004E6911 /* Production.xcconfig */,
+			);
+			path = Configurations;
+			sourceTree = "<group>";
+		};
+		2FB7A62A2215BD1A004E6911 /* Scenes */ = {
+			isa = PBXGroup;
+			children = (
+				2FB7A62B2215BD31004E6911 /* Login */,
+			);
+			path = Scenes;
+			sourceTree = "<group>";
+		};
+		2FB7A62B2215BD31004E6911 /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				2FB7A62C2215BD3D004E6911 /* LoginViewController.swift */,
+				4BF302D7224420CE0058E3F3 /* LoginViewController.storyboard */,
+			);
+			path = Login;
+			sourceTree = "<group>";
+		};
+		2FB7A6302215C0EE004E6911 /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				4BF302C92244163D0058E3F3 /* Utilities */,
+				4BF302C6224412C10058E3F3 /* UI */,
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
+		2FB7A6312215C0F5004E6911 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		2FB7A6322215C10A004E6911 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		2FB7A6332215C11F004E6911 /* API */ = {
+			isa = PBXGroup;
+			children = (
+				2FB7A6322215C10A004E6911 /* Services */,
+			);
+			path = API;
+			sourceTree = "<group>";
+		};
+		2FB7A6342215C168004E6911 /* Dependency Injection */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "Dependency Injection";
+			sourceTree = "<group>";
+		};
+		3227BECE4ECD9B0B0682EA80 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				2AF48D62078DB73F99202276 /* Pods_defaults_iOSNights2019.framework */,
+				935DD72DA430006C5390863A /* Pods_defaults_iOSNights2019Tests.framework */,
+				174CB4194E7142415953F0FC /* Pods_defaults_iOSNights2019UITests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		4BEF703D22440ED8000FCAF2 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				4BEF703F22440F01000FCAF2 /* Fonts */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		4BEF703F22440F01000FCAF2 /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				4BEF704022440F01000FCAF2 /* Maison Neue Book.otf */,
+				4BEF704122440F01000FCAF2 /* Maison Neue Bold.otf */,
+				4BEF704222440F01000FCAF2 /* Maison Neue Demi.otf */,
+				4BEF704322440F01000FCAF2 /* trump_gothic_east_bold.ttf */,
+				4BEF704422440F01000FCAF2 /* Maison Neue Medium.otf */,
+			);
+			name = Fonts;
+			path = ../../../Resources/Fonts;
+			sourceTree = "<group>";
+		};
+		4BF302C6224412C10058E3F3 /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				4BF302C7224412D50058E3F3 /* TextField.swift */,
+				4BF302CC22441F260058E3F3 /* DoneButton.swift */,
+			);
+			path = UI;
+			sourceTree = "<group>";
+		};
+		4BF302C92244163D0058E3F3 /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				4BF302CA2244164A0058E3F3 /* UIColorExtension.swift */,
+			);
+			path = Utilities;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		2FB7A5D92215610F004E6911 /* iOSNights2019 */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2FB7A60222156110004E6911 /* Build configuration list for PBXNativeTarget "iOSNights2019" */;
+			buildPhases = (
+				F282E9491DBD87F03806C263 /* [CP] Check Pods Manifest.lock */,
+				2FB7A629221572E5004E6911 /* Run Script - SwiftFormat */,
+				2FB7A5D62215610F004E6911 /* Sources */,
+				2FB7A5D72215610F004E6911 /* Frameworks */,
+				2FB7A5D82215610F004E6911 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = iOSNights2019;
+			productName = iOSNights2019;
+			productReference = 2FB7A5DA2215610F004E6911 /* iOSNights2019.app */;
+			productType = "com.apple.product-type.application";
+		};
+		2FB7A5ED22156110004E6911 /* iOSNights2019Tests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2FB7A60522156110004E6911 /* Build configuration list for PBXNativeTarget "iOSNights2019Tests" */;
+			buildPhases = (
+				93DD869C69A09FFDBD6EE5B8 /* [CP] Check Pods Manifest.lock */,
+				2FB7A5EA22156110004E6911 /* Sources */,
+				2FB7A5EB22156110004E6911 /* Frameworks */,
+				2FB7A5EC22156110004E6911 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				2FB7A5F022156110004E6911 /* PBXTargetDependency */,
+			);
+			name = iOSNights2019Tests;
+			productName = iOSNights2019Tests;
+			productReference = 2FB7A5EE22156110004E6911 /* iOSNights2019Tests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		2FB7A5F822156110004E6911 /* iOSNights2019UITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2FB7A60822156110004E6911 /* Build configuration list for PBXNativeTarget "iOSNights2019UITests" */;
+			buildPhases = (
+				1428C72F5C03A705CB8BF66F /* [CP] Check Pods Manifest.lock */,
+				2FB7A5F522156110004E6911 /* Sources */,
+				2FB7A5F622156110004E6911 /* Frameworks */,
+				2FB7A5F722156110004E6911 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				2FB7A5FB22156110004E6911 /* PBXTargetDependency */,
+			);
+			name = iOSNights2019UITests;
+			productName = iOSNights2019UITests;
+			productReference = 2FB7A5F922156110004E6911 /* iOSNights2019UITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		2FB7A5D22215610F004E6911 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1010;
+				LastUpgradeCheck = 1010;
+				ORGANIZATIONNAME = STRV;
+				TargetAttributes = {
+					2FB7A5D92215610F004E6911 = {
+						CreatedOnToolsVersion = 10.1;
+					};
+					2FB7A5ED22156110004E6911 = {
+						CreatedOnToolsVersion = 10.1;
+						TestTargetID = 2FB7A5D92215610F004E6911;
+					};
+					2FB7A5F822156110004E6911 = {
+						CreatedOnToolsVersion = 10.1;
+						TestTargetID = 2FB7A5D92215610F004E6911;
+					};
+				};
+			};
+			buildConfigurationList = 2FB7A5D52215610F004E6911 /* Build configuration list for PBXProject "iOSNights2019" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+				cs,
+			);
+			mainGroup = 2FB7A5D12215610F004E6911;
+			productRefGroup = 2FB7A5DB2215610F004E6911 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				2FB7A5D92215610F004E6911 /* iOSNights2019 */,
+				2FB7A5ED22156110004E6911 /* iOSNights2019Tests */,
+				2FB7A5F822156110004E6911 /* iOSNights2019UITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		2FB7A5D82215610F004E6911 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2FB7A5E822156110004E6911 /* LaunchScreen.storyboard in Resources */,
+				4BF302D5224420CE0058E3F3 /* LoginViewController.storyboard in Resources */,
+				4BEF704922440F01000FCAF2 /* Maison Neue Medium.otf in Resources */,
+				4BEF704722440F01000FCAF2 /* Maison Neue Demi.otf in Resources */,
+				4BF302D1224420170058E3F3 /* Localizable.strings in Resources */,
+				4BEF704522440F01000FCAF2 /* Maison Neue Book.otf in Resources */,
+				4BEF704822440F01000FCAF2 /* trump_gothic_east_bold.ttf in Resources */,
+				4BEF704622440F01000FCAF2 /* Maison Neue Bold.otf in Resources */,
+				2FB7A5E522156110004E6911 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2FB7A5EC22156110004E6911 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2FB7A5F722156110004E6911 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		1428C72F5C03A705CB8BF66F /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-defaults-iOSNights2019UITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		2FB7A629221572E5004E6911 /* Run Script - SwiftFormat */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			name = "Run Script - SwiftFormat";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "podSwiftformat=\"${PODS_ROOT}/SwiftFormat/CommandLineTool/swiftformat\"\n\nif [ -f \"$podSwiftformat\" ]; then\n    $podSwiftformat .\nelse\n    echo \"warning: Cannot find SwiftFormat in the expected Cocoapods location.\"\nfi\n";
+		};
+		93DD869C69A09FFDBD6EE5B8 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-defaults-iOSNights2019Tests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F282E9491DBD87F03806C263 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-defaults-iOSNights2019-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		2FB7A5D62215610F004E6911 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2FB7A62D2215BD3D004E6911 /* LoginViewController.swift in Sources */,
+				2FB7A62722156D8B004E6911 /* EnvironmentConfiguration.swift in Sources */,
+				4BF302CB2244164A0058E3F3 /* UIColorExtension.swift in Sources */,
+				2FB7A5DE2215610F004E6911 /* AppDelegate.swift in Sources */,
+				4BF302C8224412D50058E3F3 /* TextField.swift in Sources */,
+				4BF302CD22441F260058E3F3 /* DoneButton.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2FB7A5EA22156110004E6911 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2FB7A5F322156110004E6911 /* ExampleiOSNights2019Tests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2FB7A5F522156110004E6911 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2FB7A5FE22156110004E6911 /* ExampleiOSNights2019UITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		2FB7A5F022156110004E6911 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 2FB7A5D92215610F004E6911 /* iOSNights2019 */;
+			targetProxy = 2FB7A5EF22156110004E6911 /* PBXContainerItemProxy */;
+		};
+		2FB7A5FB22156110004E6911 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 2FB7A5D92215610F004E6911 /* iOSNights2019 */;
+			targetProxy = 2FB7A5FA22156110004E6911 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		2FB7A5E622156110004E6911 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				2FB7A5E722156110004E6911 /* Base */,
+				4BF302CE22441FCB0058E3F3 /* cs */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		4BF302D3224420170058E3F3 /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				4BF302D2224420170058E3F3 /* cs */,
+				4BF302D42244201B0058E3F3 /* en */,
+			);
+			name = Localizable.strings;
+			sourceTree = "<group>";
+		};
+		4BF302D7224420CE0058E3F3 /* LoginViewController.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				4BF302D6224420CE0058E3F3 /* Base */,
+				4BF302D9224420D90058E3F3 /* cs */,
+			);
+			name = LoginViewController.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		2FB7A60022156110004E6911 /* Debug (Development) */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2FB7A61E221569B4004E6911 /* Development.xcconfig */;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = "Debug (Development)";
+		};
+		2FB7A60122156110004E6911 /* Release (Development) */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2FB7A61E221569B4004E6911 /* Development.xcconfig */;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = "Release (Development)";
+		};
+		2FB7A60322156110004E6911 /* Debug (Development) */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2F164B010F0A235079D38ECA /* Pods-defaults-iOSNights2019.debug (development).xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = D6532TRNCE;
+				INFOPLIST_FILE = iOSNights2019/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = enterprise.com.strv.iOSNights2019.dev;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "STRV s.r.o. Enterprise - Development PP";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = "Debug (Development)";
+		};
+		2FB7A60422156110004E6911 /* Release (Development) */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E0CDD5417EA4B20A1D9064B9 /* Pods-defaults-iOSNights2019.release (development).xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = D6532TRNCE;
+				INFOPLIST_FILE = iOSNights2019/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = enterprise.com.strv.iOSNights2019.dev;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "STRV s.r.o. Enterprise - Development PP";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = "Release (Development)";
+		};
+		2FB7A60622156110004E6911 /* Debug (Development) */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1098B34FD0D54AFD33DE7981 /* Pods-defaults-iOSNights2019Tests.debug (development).xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = VKFK92G6KE;
+				INFOPLIST_FILE = iOSNights2019Tests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.strv.iOSNights2019Tests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/iOSNights2019.app/iOSNights2019";
+			};
+			name = "Debug (Development)";
+		};
+		2FB7A60722156110004E6911 /* Release (Development) */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = CC0182B2883044F22F861ECC /* Pods-defaults-iOSNights2019Tests.release (development).xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = VKFK92G6KE;
+				INFOPLIST_FILE = iOSNights2019Tests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.strv.iOSNights2019Tests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/iOSNights2019.app/iOSNights2019";
+			};
+			name = "Release (Development)";
+		};
+		2FB7A60922156110004E6911 /* Debug (Development) */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 175FB0B9AE4DC19A347A92E0 /* Pods-defaults-iOSNights2019UITests.debug (development).xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = VKFK92G6KE;
+				INFOPLIST_FILE = iOSNights2019UITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.strv.iOSNights2019UITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = iOSNights2019;
+			};
+			name = "Debug (Development)";
+		};
+		2FB7A60A22156110004E6911 /* Release (Development) */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2DA0C7FF30FBAFF15911FBA9 /* Pods-defaults-iOSNights2019UITests.release (development).xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = VKFK92G6KE;
+				INFOPLIST_FILE = iOSNights2019UITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.strv.iOSNights2019UITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = iOSNights2019;
+			};
+			name = "Release (Development)";
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		2FB7A5D52215610F004E6911 /* Build configuration list for PBXProject "iOSNights2019" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2FB7A60022156110004E6911 /* Debug (Development) */,
+				2FB7A60122156110004E6911 /* Release (Development) */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = "Debug (Development)";
+		};
+		2FB7A60222156110004E6911 /* Build configuration list for PBXNativeTarget "iOSNights2019" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2FB7A60322156110004E6911 /* Debug (Development) */,
+				2FB7A60422156110004E6911 /* Release (Development) */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = "Debug (Development)";
+		};
+		2FB7A60522156110004E6911 /* Build configuration list for PBXNativeTarget "iOSNights2019Tests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2FB7A60622156110004E6911 /* Debug (Development) */,
+				2FB7A60722156110004E6911 /* Release (Development) */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = "Debug (Development)";
+		};
+		2FB7A60822156110004E6911 /* Build configuration list for PBXNativeTarget "iOSNights2019UITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2FB7A60922156110004E6911 /* Debug (Development) */,
+				2FB7A60A22156110004E6911 /* Release (Development) */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = "Debug (Development)";
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 2FB7A5D22215610F004E6911 /* Project object */;
+}
