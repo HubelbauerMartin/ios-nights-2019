@@ -14,7 +14,16 @@
 		2FB7A5FE22156110004E6911 /* ExampleiOSNights2019UITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FB7A5FD22156110004E6911 /* ExampleiOSNights2019UITests.swift */; };
 		2FB7A62722156D8B004E6911 /* EnvironmentConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FB7A62622156D8B004E6911 /* EnvironmentConfiguration.swift */; };
 		2FB7A62D2215BD3D004E6911 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FB7A62C2215BD3D004E6911 /* LoginViewController.swift */; };
-		2FB7A62F2215BDE6004E6911 /* LoginViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2FB7A62E2215BDE6004E6911 /* LoginViewController.storyboard */; };
+		4BEF704522440F01000FCAF2 /* Maison Neue Book.otf in Resources */ = {isa = PBXBuildFile; fileRef = 4BEF704022440F01000FCAF2 /* Maison Neue Book.otf */; };
+		4BEF704622440F01000FCAF2 /* Maison Neue Bold.otf in Resources */ = {isa = PBXBuildFile; fileRef = 4BEF704122440F01000FCAF2 /* Maison Neue Bold.otf */; };
+		4BEF704722440F01000FCAF2 /* Maison Neue Demi.otf in Resources */ = {isa = PBXBuildFile; fileRef = 4BEF704222440F01000FCAF2 /* Maison Neue Demi.otf */; };
+		4BEF704822440F01000FCAF2 /* trump_gothic_east_bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 4BEF704322440F01000FCAF2 /* trump_gothic_east_bold.ttf */; };
+		4BEF704922440F01000FCAF2 /* Maison Neue Medium.otf in Resources */ = {isa = PBXBuildFile; fileRef = 4BEF704422440F01000FCAF2 /* Maison Neue Medium.otf */; };
+		4BF302C8224412D50058E3F3 /* TextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BF302C7224412D50058E3F3 /* TextField.swift */; };
+		4BF302CB2244164A0058E3F3 /* UIColorExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BF302CA2244164A0058E3F3 /* UIColorExtension.swift */; };
+		4BF302CD22441F260058E3F3 /* DoneButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BF302CC22441F260058E3F3 /* DoneButton.swift */; };
+		4BF302D1224420170058E3F3 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 4BF302D3224420170058E3F3 /* Localizable.strings */; };
+		4BF302D5224420CE0058E3F3 /* LoginViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4BF302D7224420CE0058E3F3 /* LoginViewController.storyboard */; };
 		509A210404B39693543208BB /* Pods_defaults_iOSNights2019UITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 174CB4194E7142415953F0FC /* Pods_defaults_iOSNights2019UITests.framework */; };
 		929526C50E148D989230183D /* Pods_defaults_iOSNights2019Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 935DD72DA430006C5390863A /* Pods_defaults_iOSNights2019Tests.framework */; };
 		CFE15F394C9607A9EA86E1F8 /* Pods_defaults_iOSNights2019.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2AF48D62078DB73F99202276 /* Pods_defaults_iOSNights2019.framework */; };
@@ -60,7 +69,19 @@
 		2FB7A622221569CE004E6911 /* Production.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Production.xcconfig; sourceTree = "<group>"; };
 		2FB7A62622156D8B004E6911 /* EnvironmentConfiguration.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EnvironmentConfiguration.swift; sourceTree = "<group>"; };
 		2FB7A62C2215BD3D004E6911 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
-		2FB7A62E2215BDE6004E6911 /* LoginViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = LoginViewController.storyboard; sourceTree = "<group>"; };
+		4BEF704022440F01000FCAF2 /* Maison Neue Book.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Maison Neue Book.otf"; sourceTree = "<group>"; };
+		4BEF704122440F01000FCAF2 /* Maison Neue Bold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Maison Neue Bold.otf"; sourceTree = "<group>"; };
+		4BEF704222440F01000FCAF2 /* Maison Neue Demi.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Maison Neue Demi.otf"; sourceTree = "<group>"; };
+		4BEF704322440F01000FCAF2 /* trump_gothic_east_bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = trump_gothic_east_bold.ttf; sourceTree = "<group>"; };
+		4BEF704422440F01000FCAF2 /* Maison Neue Medium.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Maison Neue Medium.otf"; sourceTree = "<group>"; };
+		4BF302C7224412D50058E3F3 /* TextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextField.swift; sourceTree = "<group>"; };
+		4BF302CA2244164A0058E3F3 /* UIColorExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIColorExtension.swift; sourceTree = "<group>"; };
+		4BF302CC22441F260058E3F3 /* DoneButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DoneButton.swift; sourceTree = "<group>"; };
+		4BF302CE22441FCB0058E3F3 /* cs */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = cs; path = cs.lproj/LaunchScreen.strings; sourceTree = "<group>"; };
+		4BF302D2224420170058E3F3 /* cs */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = cs; path = cs.lproj/Localizable.strings; sourceTree = "<group>"; };
+		4BF302D42244201B0058E3F3 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
+		4BF302D6224420CE0058E3F3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LoginViewController.storyboard; sourceTree = "<group>"; };
+		4BF302D9224420D90058E3F3 /* cs */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = cs; path = cs.lproj/LoginViewController.strings; sourceTree = "<group>"; };
 		72AB6CAD55FD2816AF6D9488 /* Pods-defaults-iOSNights2019.release (production).xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-defaults-iOSNights2019.release (production).xcconfig"; path = "Pods/Target Support Files/Pods-defaults-iOSNights2019/Pods-defaults-iOSNights2019.release (production).xcconfig"; sourceTree = "<group>"; };
 		935DD72DA430006C5390863A /* Pods_defaults_iOSNights2019Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_defaults_iOSNights2019Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		9BBF92805D66902483759E86 /* Pods-defaults-iOSNights2019Tests.debug (production).xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-defaults-iOSNights2019Tests.debug (production).xcconfig"; path = "Pods/Target Support Files/Pods-defaults-iOSNights2019Tests/Pods-defaults-iOSNights2019Tests.debug (production).xcconfig"; sourceTree = "<group>"; };
@@ -154,6 +175,8 @@
 				2FB7A5E622156110004E6911 /* LaunchScreen.storyboard */,
 				2FB7A5E922156110004E6911 /* Info.plist */,
 				2FB7A62622156D8B004E6911 /* EnvironmentConfiguration.swift */,
+				4BF302D3224420170058E3F3 /* Localizable.strings */,
+				4BEF703D22440ED8000FCAF2 /* Resources */,
 			);
 			path = iOSNights2019;
 			sourceTree = "<group>";
@@ -197,7 +220,7 @@
 			isa = PBXGroup;
 			children = (
 				2FB7A62C2215BD3D004E6911 /* LoginViewController.swift */,
-				2FB7A62E2215BDE6004E6911 /* LoginViewController.storyboard */,
+				4BF302D7224420CE0058E3F3 /* LoginViewController.storyboard */,
 			);
 			path = Login;
 			sourceTree = "<group>";
@@ -205,6 +228,8 @@
 		2FB7A6302215C0EE004E6911 /* Common */ = {
 			isa = PBXGroup;
 			children = (
+				4BF302C92244163D0058E3F3 /* Utilities */,
+				4BF302C6224412C10058E3F3 /* UI */,
 			);
 			path = Common;
 			sourceTree = "<group>";
@@ -246,6 +271,44 @@
 				174CB4194E7142415953F0FC /* Pods_defaults_iOSNights2019UITests.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		4BEF703D22440ED8000FCAF2 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				4BEF703F22440F01000FCAF2 /* Fonts */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		4BEF703F22440F01000FCAF2 /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				4BEF704022440F01000FCAF2 /* Maison Neue Book.otf */,
+				4BEF704122440F01000FCAF2 /* Maison Neue Bold.otf */,
+				4BEF704222440F01000FCAF2 /* Maison Neue Demi.otf */,
+				4BEF704322440F01000FCAF2 /* trump_gothic_east_bold.ttf */,
+				4BEF704422440F01000FCAF2 /* Maison Neue Medium.otf */,
+			);
+			name = Fonts;
+			path = ../../../Resources/Fonts;
+			sourceTree = "<group>";
+		};
+		4BF302C6224412C10058E3F3 /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				4BF302C7224412D50058E3F3 /* TextField.swift */,
+				4BF302CC22441F260058E3F3 /* DoneButton.swift */,
+			);
+			path = UI;
+			sourceTree = "<group>";
+		};
+		4BF302C92244163D0058E3F3 /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				4BF302CA2244164A0058E3F3 /* UIColorExtension.swift */,
+			);
+			path = Utilities;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -338,6 +401,7 @@
 			knownRegions = (
 				en,
 				Base,
+				cs,
 			);
 			mainGroup = 2FB7A5D12215610F004E6911;
 			productRefGroup = 2FB7A5DB2215610F004E6911 /* Products */;
@@ -357,7 +421,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				2FB7A5E822156110004E6911 /* LaunchScreen.storyboard in Resources */,
-				2FB7A62F2215BDE6004E6911 /* LoginViewController.storyboard in Resources */,
+				4BF302D5224420CE0058E3F3 /* LoginViewController.storyboard in Resources */,
+				4BEF704922440F01000FCAF2 /* Maison Neue Medium.otf in Resources */,
+				4BEF704722440F01000FCAF2 /* Maison Neue Demi.otf in Resources */,
+				4BF302D1224420170058E3F3 /* Localizable.strings in Resources */,
+				4BEF704522440F01000FCAF2 /* Maison Neue Book.otf in Resources */,
+				4BEF704822440F01000FCAF2 /* trump_gothic_east_bold.ttf in Resources */,
+				4BEF704622440F01000FCAF2 /* Maison Neue Bold.otf in Resources */,
 				2FB7A5E522156110004E6911 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -472,7 +542,10 @@
 			files = (
 				2FB7A62D2215BD3D004E6911 /* LoginViewController.swift in Sources */,
 				2FB7A62722156D8B004E6911 /* EnvironmentConfiguration.swift in Sources */,
+				4BF302CB2244164A0058E3F3 /* UIColorExtension.swift in Sources */,
 				2FB7A5DE2215610F004E6911 /* AppDelegate.swift in Sources */,
+				4BF302C8224412D50058E3F3 /* TextField.swift in Sources */,
+				4BF302CD22441F260058E3F3 /* DoneButton.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -512,8 +585,27 @@
 			isa = PBXVariantGroup;
 			children = (
 				2FB7A5E722156110004E6911 /* Base */,
+				4BF302CE22441FCB0058E3F3 /* cs */,
 			);
 			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		4BF302D3224420170058E3F3 /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				4BF302D2224420170058E3F3 /* cs */,
+				4BF302D42244201B0058E3F3 /* en */,
+			);
+			name = Localizable.strings;
+			sourceTree = "<group>";
+		};
+		4BF302D7224420CE0058E3F3 /* LoginViewController.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				4BF302D6224420CE0058E3F3 /* Base */,
+				4BF302D9224420D90058E3F3 /* cs */,
+			);
+			name = LoginViewController.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -524,6 +616,7 @@
 			baseConfigurationReference = 2FB7A61E221569B4004E6911 /* Development.xcconfig */;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
@@ -586,6 +679,7 @@
 			baseConfigurationReference = 2FB7A61E221569B4004E6911 /* Development.xcconfig */;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
