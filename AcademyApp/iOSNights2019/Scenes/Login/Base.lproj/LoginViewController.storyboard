@@ -1,16 +1,19 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="qx5-xO-yKZ">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="qx5-xO-yKZ">
     <device id="retina4_0" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
         <capability name="Named colors" minToolsVersion="9.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <customFonts key="customFonts">
+        <array key="Maison Neue Demi.otf">
+            <string>MaisonNeue-Demi</string>
+        </array>
         <array key="Maison Neue Medium.otf">
             <string>MaisonNeue-Medium</string>
         </array>
@@ -92,7 +95,7 @@
                                                 </constraints>
                                             </imageView>
                                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="eAz-uk-0rv" customClass="TextField" customModule="iOSNights2019" customModuleProvider="target">
-                                                <rect key="frame" x="38" y="0.0" width="201" height="50"/>
+                                                <rect key="frame" x="38" y="0.0" width="202" height="50"/>
                                                 <nil key="textColor"/>
                                                 <fontDescription key="fontDescription" name="MaisonNeue-Medium" family="Maison Neue" pointSize="16"/>
                                                 <textInputTraits key="textInputTraits"/>
@@ -105,11 +108,9 @@
                                                 </constraints>
                                             </view>
                                             <button opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" horizontalCompressionResistancePriority="751" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="AUm-7d-kz4" customClass="RevealButton" customModule="iOSNights2019" customModuleProvider="target">
-                                                <rect key="frame" x="239" y="0.0" width="41" height="49"/>
-                                                <fontDescription key="fontDescription" type="system" weight="medium" pointSize="13"/>
-                                                <state key="normal" title="SHOW">
-                                                    <color key="titleColor" name="grayText"/>
-                                                </state>
+                                                <rect key="frame" x="240" y="0.0" width="40" height="49"/>
+                                                <fontDescription key="fontDescription" name="MaisonNeue-Demi" family="Maison Neue" pointSize="13"/>
+                                                <state key="normal" title="SHOW"/>
                                                 <connections>
                                                     <action selector="didPressRevealButton:" destination="qx5-xO-yKZ" eventType="touchUpInside" id="Ny4-fU-Gkg"/>
                                                 </connections>
@@ -180,9 +181,6 @@
         <image name="icon-password" width="10" height="13"/>
         <namedColor name="buttonBackground">
             <color red="0.25098039215686274" green="0.25098039215686274" blue="0.25098039215686274" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-        </namedColor>
-        <namedColor name="grayText">
-            <color red="0.50196078431372548" green="0.50196078431372548" blue="0.50196078431372548" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
         <namedColor name="screenBackground">
             <color red="0.066666666666666666" green="0.078431372549019607" blue="0.086274509803921567" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>

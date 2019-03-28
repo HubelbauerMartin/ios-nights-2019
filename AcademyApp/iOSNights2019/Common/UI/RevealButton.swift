@@ -15,11 +15,19 @@ class RevealButton: UIButton {
     }
 
     func setState(_ state: RevealState) {
-        switch state {
-        case .show:
-            setTitle(NSLocalizedString("Show", comment: "").uppercased(), for: .normal)
-        case .hide:
-            setTitle(NSLocalizedString("Hide", comment: "").uppercased(), for: .normal)
-        }
+        let attr: [NSAttributedString.Key: Any] = [
+            NSAttributedString.Key.foregroundColor: UIColor.appGrayText,
+            NSAttributedString.Key.kern: 1
+        ]
+        let title: String = {
+            switch state {
+            case .show:
+                return NSLocalizedString("Show", comment: "")
+            case .hide:
+                return NSLocalizedString("Hide", comment: "")
+            }
+        }()
+        let attrTitle = NSAttributedString(string: title.uppercased(), attributes: attr)
+        setAttributedTitle(attrTitle, for: .normal)
     }
 }
