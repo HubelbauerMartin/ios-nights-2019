@@ -19,6 +19,7 @@
 		4BEF704722440F01000FCAF2 /* Maison Neue Demi.otf in Resources */ = {isa = PBXBuildFile; fileRef = 4BEF704222440F01000FCAF2 /* Maison Neue Demi.otf */; };
 		4BEF704822440F01000FCAF2 /* trump_gothic_east_bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 4BEF704322440F01000FCAF2 /* trump_gothic_east_bold.ttf */; };
 		4BEF704922440F01000FCAF2 /* Maison Neue Medium.otf in Resources */ = {isa = PBXBuildFile; fileRef = 4BEF704422440F01000FCAF2 /* Maison Neue Medium.otf */; };
+		4BF0A299224CD95600A91666 /* RevealButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BF0A298224CD95600A91666 /* RevealButton.swift */; };
 		4BF302C8224412D50058E3F3 /* TextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BF302C7224412D50058E3F3 /* TextField.swift */; };
 		4BF302CB2244164A0058E3F3 /* UIColorExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BF302CA2244164A0058E3F3 /* UIColorExtension.swift */; };
 		4BF302CD22441F260058E3F3 /* DoneButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BF302CC22441F260058E3F3 /* DoneButton.swift */; };
@@ -74,6 +75,7 @@
 		4BEF704222440F01000FCAF2 /* Maison Neue Demi.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Maison Neue Demi.otf"; sourceTree = "<group>"; };
 		4BEF704322440F01000FCAF2 /* trump_gothic_east_bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = trump_gothic_east_bold.ttf; sourceTree = "<group>"; };
 		4BEF704422440F01000FCAF2 /* Maison Neue Medium.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Maison Neue Medium.otf"; sourceTree = "<group>"; };
+		4BF0A298224CD95600A91666 /* RevealButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RevealButton.swift; sourceTree = "<group>"; };
 		4BF302C7224412D50058E3F3 /* TextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextField.swift; sourceTree = "<group>"; };
 		4BF302CA2244164A0058E3F3 /* UIColorExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIColorExtension.swift; sourceTree = "<group>"; };
 		4BF302CC22441F260058E3F3 /* DoneButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DoneButton.swift; sourceTree = "<group>"; };
@@ -299,6 +301,7 @@
 			children = (
 				4BF302C7224412D50058E3F3 /* TextField.swift */,
 				4BF302CC22441F260058E3F3 /* DoneButton.swift */,
+				4BF0A298224CD95600A91666 /* RevealButton.swift */,
 			);
 			path = UI;
 			sourceTree = "<group>";
@@ -544,6 +547,7 @@
 				2FB7A62722156D8B004E6911 /* EnvironmentConfiguration.swift in Sources */,
 				4BF302CB2244164A0058E3F3 /* UIColorExtension.swift in Sources */,
 				2FB7A5DE2215610F004E6911 /* AppDelegate.swift in Sources */,
+				4BF0A299224CD95600A91666 /* RevealButton.swift in Sources */,
 				4BF302C8224412D50058E3F3 /* TextField.swift in Sources */,
 				4BF302CD22441F260058E3F3 /* DoneButton.swift in Sources */,
 			);

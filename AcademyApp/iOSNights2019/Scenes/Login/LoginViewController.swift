@@ -17,8 +17,8 @@ class LoginViewController: UIViewController {
     @IBOutlet private var emailTextField: UITextField!
     @IBOutlet private var passwordTextField: TextField!
     @IBOutlet private var doneBottomButtonConstraint: NSLayoutConstraint!
-
-    @IBOutlet var doneButton: UIButton!
+    @IBOutlet private var doneButton: DoneButton!
+    @IBOutlet private var revealPasswordButton: RevealButton!
 
     // MARK: - Private properties
     private var email: String {
@@ -39,6 +39,12 @@ class LoginViewController: UIViewController {
 
     @IBAction func didPressDoneButton(_: Any) {
         print("Done button is pressed")
+    }
+
+    @IBAction func didPressRevealButton(_: Any) {
+        print("Reveal password button is pressed")
+        passwordTextField.isSecureTextEntry.toggle()
+        revealPasswordButton.setState(passwordTextField.isSecureTextEntry ? .show : .hide)
     }
 }
 
@@ -76,6 +82,10 @@ private extension LoginViewController {
 
         // Done button
         doneButton.isEnabled = false
+
+        // Reveal button
+        revealPasswordButton.isHidden = true
+        revealPasswordButton.setState(.show)
     }
 
     @objc func didTapOnView() {
@@ -104,6 +114,7 @@ private extension LoginViewController {
     }
 
     @objc func didChangeInput() {
+        revealPasswordButton.isHidden = password.isEmpty
         doneButton.isEnabled = !email.isEmpty && !password.isEmpty
     }
 }

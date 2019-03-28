@@ -92,7 +92,7 @@
                                                 </constraints>
                                             </imageView>
                                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="eAz-uk-0rv" customClass="TextField" customModule="iOSNights2019" customModuleProvider="target">
-                                                <rect key="frame" x="38" y="0.0" width="242" height="50"/>
+                                                <rect key="frame" x="38" y="0.0" width="201" height="50"/>
                                                 <nil key="textColor"/>
                                                 <fontDescription key="fontDescription" name="MaisonNeue-Medium" family="Maison Neue" pointSize="16"/>
                                                 <textInputTraits key="textInputTraits"/>
@@ -104,20 +104,33 @@
                                                     <constraint firstAttribute="height" constant="1" id="x2l-b9-3Qo"/>
                                                 </constraints>
                                             </view>
+                                            <button opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" horizontalCompressionResistancePriority="751" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="AUm-7d-kz4" customClass="RevealButton" customModule="iOSNights2019" customModuleProvider="target">
+                                                <rect key="frame" x="239" y="0.0" width="41" height="49"/>
+                                                <fontDescription key="fontDescription" type="system" weight="medium" pointSize="13"/>
+                                                <state key="normal" title="SHOW">
+                                                    <color key="titleColor" name="grayText"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="didPressRevealButton:" destination="qx5-xO-yKZ" eventType="touchUpInside" id="Ny4-fU-Gkg"/>
+                                                </connections>
+                                            </button>
                                         </subviews>
                                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <constraints>
                                             <constraint firstItem="krI-C6-fI2" firstAttribute="leading" secondItem="j5X-Mt-HSQ" secondAttribute="leading" id="1BY-gq-CPK"/>
                                             <constraint firstAttribute="bottom" secondItem="eAz-uk-0rv" secondAttribute="bottom" id="3vA-bH-Mcb"/>
+                                            <constraint firstItem="AUm-7d-kz4" firstAttribute="top" secondItem="j5X-Mt-HSQ" secondAttribute="top" id="8ut-9L-hH3"/>
                                             <constraint firstItem="EcB-7b-cR9" firstAttribute="leading" secondItem="j5X-Mt-HSQ" secondAttribute="leading" id="D5P-ui-L4A"/>
                                             <constraint firstAttribute="height" constant="50" id="DqR-71-bxj"/>
+                                            <constraint firstItem="AUm-7d-kz4" firstAttribute="leading" secondItem="eAz-uk-0rv" secondAttribute="trailing" id="EhR-ee-LNW"/>
+                                            <constraint firstAttribute="trailing" secondItem="AUm-7d-kz4" secondAttribute="trailing" id="YlE-EO-yOk"/>
                                             <constraint firstItem="eAz-uk-0rv" firstAttribute="leading" secondItem="EcB-7b-cR9" secondAttribute="trailing" constant="8" id="aX3-Os-l1W"/>
                                             <constraint firstAttribute="trailing" secondItem="krI-C6-fI2" secondAttribute="trailing" id="aqZ-Nn-edo"/>
                                             <constraint firstItem="EcB-7b-cR9" firstAttribute="top" secondItem="j5X-Mt-HSQ" secondAttribute="top" id="dVq-i9-Uyf"/>
-                                            <constraint firstAttribute="trailing" secondItem="eAz-uk-0rv" secondAttribute="trailing" id="e3w-3D-yi2"/>
                                             <constraint firstItem="eAz-uk-0rv" firstAttribute="top" secondItem="j5X-Mt-HSQ" secondAttribute="top" id="gUG-Zk-nub"/>
                                             <constraint firstAttribute="bottom" secondItem="EcB-7b-cR9" secondAttribute="bottom" id="hkV-UB-KDd"/>
                                             <constraint firstAttribute="bottom" secondItem="krI-C6-fI2" secondAttribute="bottom" id="ule-9S-6GK"/>
+                                            <constraint firstItem="krI-C6-fI2" firstAttribute="top" secondItem="AUm-7d-kz4" secondAttribute="bottom" id="xY2-ML-7ze"/>
                                         </constraints>
                                     </view>
                                 </subviews>
@@ -153,6 +166,7 @@
                         <outlet property="doneButton" destination="1iw-cc-LeR" id="v33-IK-rJg"/>
                         <outlet property="emailTextField" destination="i7V-PF-3z6" id="SlG-hk-Mgw"/>
                         <outlet property="passwordTextField" destination="eAz-uk-0rv" id="X9D-EV-8wu"/>
+                        <outlet property="revealPasswordButton" destination="AUm-7d-kz4" id="vFk-r4-ubD"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="AP3-Td-ZFd" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -166,6 +180,9 @@
         <image name="icon-password" width="10" height="13"/>
         <namedColor name="buttonBackground">
             <color red="0.25098039215686274" green="0.25098039215686274" blue="0.25098039215686274" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="grayText">
+            <color red="0.50196078431372548" green="0.50196078431372548" blue="0.50196078431372548" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
         <namedColor name="screenBackground">
             <color red="0.066666666666666666" green="0.078431372549019607" blue="0.086274509803921567" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
