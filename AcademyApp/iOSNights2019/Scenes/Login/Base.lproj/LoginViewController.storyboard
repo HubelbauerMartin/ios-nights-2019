@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="qx5-xO-yKZ">
-    <device id="retina4_7" orientation="portrait">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="qx5-xO-yKZ">
+    <device id="retina4_0" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
         <capability name="Named colors" minToolsVersion="9.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -21,14 +21,14 @@
             <objects>
                 <viewController id="qx5-xO-yKZ" customClass="LoginViewController" customModule="iOSNights2019" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="2qU-4e-nNv">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="STRV Academy" translatesAutoresizingMaskIntoConstraints="NO" id="YOX-X6-dgX">
-                                <rect key="frame" x="100.5" y="84" width="174" height="30"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="1000" image="STRV Academy" translatesAutoresizingMaskIntoConstraints="NO" id="YOX-X6-dgX">
+                                <rect key="frame" x="73" y="84" width="174" height="30"/>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1iw-cc-LeR" customClass="DoneButton" customModule="iOSNights2019" customModuleProvider="target">
-                                <rect key="frame" x="20" y="560" width="335" height="60"/>
+                                <rect key="frame" x="20" y="461" width="280" height="60"/>
                                 <color key="backgroundColor" name="buttonBackground"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="60" id="TQu-PM-uvk"/>
@@ -42,10 +42,10 @@
                                 </connections>
                             </button>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ygP-So-2ro">
-                                <rect key="frame" x="20" y="267" width="335" height="133"/>
+                                <rect key="frame" x="20" y="217.5" width="280" height="133"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="rqy-QO-eZ6">
-                                        <rect key="frame" x="0.0" y="0.0" width="335" height="50"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="280" height="50"/>
                                         <subviews>
                                             <imageView userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="icon-email" translatesAutoresizingMaskIntoConstraints="NO" id="LFN-KC-78v">
                                                 <rect key="frame" x="0.0" y="0.0" width="30" height="50"/>
@@ -54,13 +54,13 @@
                                                 </constraints>
                                             </imageView>
                                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="i7V-PF-3z6" customClass="TextField" customModule="iOSNights2019" customModuleProvider="target">
-                                                <rect key="frame" x="38" y="0.0" width="297" height="50"/>
+                                                <rect key="frame" x="38" y="0.0" width="242" height="50"/>
                                                 <nil key="textColor"/>
                                                 <fontDescription key="fontDescription" name="MaisonNeue-Medium" family="Maison Neue" pointSize="16"/>
                                                 <textInputTraits key="textInputTraits"/>
                                             </textField>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="vzs-A6-ehK">
-                                                <rect key="frame" x="0.0" y="49" width="335" height="1"/>
+                                                <rect key="frame" x="0.0" y="49" width="280" height="1"/>
                                                 <color key="backgroundColor" name="separator"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="1" id="MPQ-nx-fgj"/>
@@ -83,7 +83,7 @@
                                         </constraints>
                                     </view>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="j5X-Mt-HSQ">
-                                        <rect key="frame" x="0.0" y="83" width="335" height="50"/>
+                                        <rect key="frame" x="0.0" y="83" width="280" height="50"/>
                                         <subviews>
                                             <imageView userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="icon-password" translatesAutoresizingMaskIntoConstraints="NO" id="EcB-7b-cR9">
                                                 <rect key="frame" x="0.0" y="0.0" width="30" height="50"/>
@@ -92,13 +92,13 @@
                                                 </constraints>
                                             </imageView>
                                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="eAz-uk-0rv" customClass="TextField" customModule="iOSNights2019" customModuleProvider="target">
-                                                <rect key="frame" x="38" y="0.0" width="297" height="50"/>
+                                                <rect key="frame" x="38" y="0.0" width="242" height="50"/>
                                                 <nil key="textColor"/>
                                                 <fontDescription key="fontDescription" name="MaisonNeue-Medium" family="Maison Neue" pointSize="16"/>
                                                 <textInputTraits key="textInputTraits"/>
                                             </textField>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="krI-C6-fI2">
-                                                <rect key="frame" x="0.0" y="49" width="335" height="1"/>
+                                                <rect key="frame" x="0.0" y="49" width="280" height="1"/>
                                                 <color key="backgroundColor" name="separator"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="1" id="x2l-b9-3Qo"/>
@@ -135,7 +135,8 @@
                         </subviews>
                         <color key="backgroundColor" name="screenBackground"/>
                         <constraints>
-                            <constraint firstItem="YOX-X6-dgX" firstAttribute="top" secondItem="q2H-7c-m03" secondAttribute="top" constant="64" id="ELk-xE-YdH"/>
+                            <constraint firstItem="YOX-X6-dgX" firstAttribute="top" secondItem="q2H-7c-m03" secondAttribute="top" priority="999" constant="64" id="ELk-xE-YdH"/>
+                            <constraint firstItem="ygP-So-2ro" firstAttribute="top" relation="greaterThanOrEqual" secondItem="YOX-X6-dgX" secondAttribute="bottom" constant="20" id="bpT-3X-0NJ"/>
                             <constraint firstItem="q2H-7c-m03" firstAttribute="bottom" secondItem="1iw-cc-LeR" secondAttribute="bottom" constant="47" id="dMi-Fz-ReE"/>
                             <constraint firstItem="q2H-7c-m03" firstAttribute="trailing" secondItem="1iw-cc-LeR" secondAttribute="trailing" constant="20" id="dUO-jc-P1E"/>
                             <constraint firstItem="1iw-cc-LeR" firstAttribute="top" relation="greaterThanOrEqual" secondItem="ygP-So-2ro" secondAttribute="bottom" constant="20" id="dx1-KE-XxN"/>
