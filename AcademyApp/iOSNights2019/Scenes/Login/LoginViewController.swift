@@ -29,6 +29,26 @@ class LoginViewController: UIViewController {
         return passwordTextField.text ?? ""
     }
 
+    private var isFormValid: Bool {
+        return isEmailValid && isPasswordValid
+    }
+
+    private var isEmailValid: Bool {
+        // return !email.isEmpty // Validate only email existation
+
+        // E.g.: https://stackoverflow.com/a/25471164/1054550
+        let emailRegEx = "[A-Z0-9a-z._%+-]+@[A-Za-z0-9.-]+\\.[A-Za-z]{2,64}"
+        // let emailTest = NSPredicate(format: "SELF MATCHES %@", emailRegEx)
+        // return emailTest.evaluate(with: email)
+
+        // Or: https://stackoverflow.com/a/29784455/1054550
+        return email.range(of: emailRegEx, options: .regularExpression, range: nil, locale: nil) != nil
+    }
+
+    private var isPasswordValid: Bool {
+        return !password.isEmpty
+    }
+
     // MARK: - Life cycle
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -115,7 +135,7 @@ private extension LoginViewController {
 
     @objc func didChangeInput() {
         revealPasswordButton.isHidden = password.isEmpty
-        doneButton.isEnabled = !email.isEmpty && !password.isEmpty
+        doneButton.isEnabled = isFormValid
     }
 }
 
