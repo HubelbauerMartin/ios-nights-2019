@@ -13,6 +13,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     var window: UIWindow?
 
     func application(_: UIApplication, didFinishLaunchingWithOptions _: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
+        RootCoordinator.shared = RootCoordinator(appDelegate: self)
+
         let loginViewController = UIStoryboard(name: "LoginViewController", bundle: nil)
             .instantiateInitialViewController() as? LoginViewController
 

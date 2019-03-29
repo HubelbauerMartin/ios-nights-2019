@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="6q0-Gc-VOo">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Item-->
+        <scene sceneID="Sks-Vb-lBw">
+            <objects>
+                <viewController id="6q0-Gc-VOo" customClass="ProfileViewController" customModule="iOSNights2019" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="1Hg-4M-dAo">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="6lK-Ky-oLJ" userLabel="topView">
+                                <rect key="frame" x="20" y="65" width="335" height="55"/>
+                                <subviews>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="icon-profile-placeholder" translatesAutoresizingMaskIntoConstraints="NO" id="7cu-v0-cct" userLabel="imgProfilePic">
+                                        <rect key="frame" x="0.0" y="0.0" width="55" height="55"/>
+                                    </imageView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" verticalHuggingPriority="251" horizontalCompressionResistancePriority="749" text="Tim Apple" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="agj-WC-um0" userLabel="lblName">
+                                        <rect key="frame" x="75" y="17" width="185" height="21"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Mix-T5-zQp" userLabel="btnSettings">
+                                        <rect key="frame" x="280" y="0.0" width="55" height="55"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="55" id="OBE-3b-37g"/>
+                                            <constraint firstAttribute="width" constant="55" id="sd1-ir-nyT"/>
+                                        </constraints>
+                                        <state key="normal" image="icon-settings"/>
+                                        <connections>
+                                            <action selector="settingAction" destination="6q0-Gc-VOo" eventType="touchUpInside" id="A13-9L-5f8"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstItem="Mix-T5-zQp" firstAttribute="leading" secondItem="agj-WC-um0" secondAttribute="trailing" constant="20" id="9cr-wV-RJu"/>
+                                    <constraint firstAttribute="height" constant="55" id="CWv-8A-9TY"/>
+                                    <constraint firstItem="agj-WC-um0" firstAttribute="centerY" secondItem="6lK-Ky-oLJ" secondAttribute="centerY" id="Dfa-bV-7Kn"/>
+                                    <constraint firstItem="agj-WC-um0" firstAttribute="leading" secondItem="7cu-v0-cct" secondAttribute="trailing" constant="20" id="JlZ-QA-B4R"/>
+                                    <constraint firstItem="Mix-T5-zQp" firstAttribute="centerY" secondItem="6lK-Ky-oLJ" secondAttribute="centerY" id="KG1-0l-u59"/>
+                                    <constraint firstItem="7cu-v0-cct" firstAttribute="height" secondItem="6lK-Ky-oLJ" secondAttribute="height" id="QL5-4d-Pd5"/>
+                                    <constraint firstItem="7cu-v0-cct" firstAttribute="top" secondItem="6lK-Ky-oLJ" secondAttribute="top" id="R13-yR-dWh"/>
+                                    <constraint firstAttribute="trailing" secondItem="Mix-T5-zQp" secondAttribute="trailing" id="eSU-5I-yrL"/>
+                                    <constraint firstItem="7cu-v0-cct" firstAttribute="leading" secondItem="6lK-Ky-oLJ" secondAttribute="leading" id="pSy-we-rHB"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" name="screenBackground"/>
+                        <constraints>
+                            <constraint firstItem="6lK-Ky-oLJ" firstAttribute="top" secondItem="8GE-xy-fie" secondAttribute="top" constant="45" id="cMr-Zn-BkF"/>
+                            <constraint firstItem="8GE-xy-fie" firstAttribute="trailing" secondItem="6lK-Ky-oLJ" secondAttribute="trailing" constant="20" id="n7u-uQ-FT6"/>
+                            <constraint firstItem="6lK-Ky-oLJ" firstAttribute="leading" secondItem="8GE-xy-fie" secondAttribute="leading" constant="20" id="t2N-IF-VHu"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="8GE-xy-fie"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Item" id="taI-2o-cze"/>
+                    <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="FbB-Wi-PfT" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="178" y="152"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="icon-profile-placeholder" width="55" height="55"/>
+        <image name="icon-settings" width="5" height="13"/>
+        <namedColor name="screenBackground">
+            <color red="0.066666666666666666" green="0.078431372549019607" blue="0.086274509803921567" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
+</document>

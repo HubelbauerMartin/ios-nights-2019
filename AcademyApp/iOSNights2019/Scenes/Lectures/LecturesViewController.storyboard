@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="wrW-0I-jtG">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Item-->
+        <scene sceneID="OJv-mM-d5U">
+            <objects>
+                <navigationController id="wrW-0I-jtG" customClass="BlankNavigationViewController" customModule="iOSNights2019" customModuleProvider="target" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Item" id="x8U-mw-NdB"/>
+                    <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="hbS-tz-fNV">
+                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="STb-oe-6RY" kind="relationship" relationship="rootViewController" id="gvB-cp-AHS"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="6kI-lh-Hgk" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-842" y="-133"/>
+        </scene>
+        <!--Lectures View Controller-->
+        <scene sceneID="nSG-7L-Kaw">
+            <objects>
+                <viewController id="STb-oe-6RY" customClass="LecturesViewController" customModule="iOSNights2019" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="v5L-ne-MAa">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="LECTURES" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WSw-WF-z8o" userLabel="lblTitle">
+                                <rect key="frame" x="136.5" y="329" width="102.5" height="24"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="A9P-sc-s8N" userLabel="btnDetail">
+                                <rect key="frame" x="166" y="373" width="43" height="30"/>
+                                <state key="normal" title="Swift I">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="lectureDetailAction" destination="STb-oe-6RY" eventType="touchUpInside" id="JH6-qf-mP5"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" name="screenBackground"/>
+                        <constraints>
+                            <constraint firstItem="A9P-sc-s8N" firstAttribute="top" secondItem="WSw-WF-z8o" secondAttribute="bottom" constant="20" id="7Pt-4G-1Qf"/>
+                            <constraint firstItem="WSw-WF-z8o" firstAttribute="centerY" secondItem="0hM-TR-YSh" secondAttribute="centerY" id="KEz-DB-bAT"/>
+                            <constraint firstItem="A9P-sc-s8N" firstAttribute="centerX" secondItem="0hM-TR-YSh" secondAttribute="centerX" id="Mrc-9o-mSE"/>
+                            <constraint firstItem="WSw-WF-z8o" firstAttribute="centerX" secondItem="0hM-TR-YSh" secondAttribute="centerX" id="qp2-YV-Gan"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="0hM-TR-YSh"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="XpE-no-6dj"/>
+                    <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="8VD-zF-x5J" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="92" y="-133"/>
+        </scene>
+    </scenes>
+    <resources>
+        <namedColor name="screenBackground">
+            <color red="0.066666666666666666" green="0.078431372549019607" blue="0.086274509803921567" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
+</document>
