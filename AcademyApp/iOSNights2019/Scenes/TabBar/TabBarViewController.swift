@@ -9,7 +9,17 @@
 import UIKit
 
 class TabBarViewController: UITabBarController {
+    // MARK: - Object lifecycle
     override func viewDidLoad() {
         super.viewDidLoad()
+
+        setup()
+    }
+}
+
+private extension TabBarViewController {
+    func setup() {
+        tabBar.barTintColor = UIColor(named: "tabbarBackground")
+        tabBar.tintColor = .white
     }
 }

@@ -20,21 +20,21 @@ class RootCoordinator {
 
     // MARK: - Public methods
     func didLogIn() {
-        changeContextTo(tabBarViewController() ?? UIViewController())
+        changeContextTo(tabBarViewController())
     }
 
     func didLogOut() {
-        changeContextTo(loginViewController() ?? UIViewController())
+        changeContextTo(loginViewController())
     }
 }
 
 private extension RootCoordinator {
-    func tabBarViewController() -> TabBarViewController? {
-        return UIStoryboard(name: "TabBarViewController", bundle: nil).instantiateInitialViewController() as? TabBarViewController
+    func tabBarViewController() -> UIViewController {
+        return UIStoryboard(name: "TabBarViewController", bundle: nil).instantiateInitialViewController() ?? UIViewController()
     }
 
-    func loginViewController() -> LoginViewController? {
-        return UIStoryboard(name: "LoginViewController", bundle: nil).instantiateInitialViewController() as? LoginViewController
+    func loginViewController() -> UIViewController {
+        return UIStoryboard(name: "LoginViewController", bundle: nil).instantiateInitialViewController() ?? UIViewController()
     }
 
     func changeContextTo(_ viewController: UIViewController) {

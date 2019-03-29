@@ -11,7 +11,7 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Item-->
+        <!--Profile-->
         <scene sceneID="Sks-Vb-lBw">
             <objects>
                 <viewController id="6q0-Gc-VOo" customClass="ProfileViewController" customModule="iOSNights2019" customModuleProvider="target" sceneMemberID="viewController">
@@ -65,7 +65,7 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="8GE-xy-fie"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Item" id="taI-2o-cze"/>
+                    <tabBarItem key="tabBarItem" title="Profile" image="icon-profile-inactive" selectedImage="icon-profile-active" id="taI-2o-cze"/>
                     <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="FbB-Wi-PfT" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -74,6 +74,8 @@
         </scene>
     </scenes>
     <resources>
+        <image name="icon-profile-active" width="26" height="26"/>
+        <image name="icon-profile-inactive" width="26" height="26"/>
         <image name="icon-profile-placeholder" width="55" height="55"/>
         <image name="icon-settings" width="5" height="13"/>
         <namedColor name="screenBackground">
