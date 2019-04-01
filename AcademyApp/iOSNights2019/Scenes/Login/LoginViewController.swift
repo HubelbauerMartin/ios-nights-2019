@@ -57,8 +57,12 @@ class LoginViewController: UIViewController {
         setupUI()
     }
 
+    deinit {
+        print("Bye")
+    }
+
     @IBAction func didPressDoneButton(_: Any) {
-        print("Done button is pressed")
+        RootCoordinator.shared?.didLogIn()
     }
 
     @IBAction func didPressRevealButton(_: Any) {
