@@ -17,8 +17,8 @@ class LoginViewController: UIViewController {
     @IBOutlet private var emailTextField: UITextField!
     @IBOutlet private var passwordTextField: TextField!
     @IBOutlet private var doneBottomButtonConstraint: NSLayoutConstraint!
-
-    @IBOutlet var doneButton: UIButton!
+    @IBOutlet private var doneButton: DoneButton!
+    @IBOutlet private var revealPasswordButton: RevealButton!
 
     // MARK: - Private properties
     private var email: String {
@@ -27,6 +27,26 @@ class LoginViewController: UIViewController {
 
     private var password: String {
         return passwordTextField.text ?? ""
+    }
+
+    private var isFormValid: Bool {
+        return isEmailValid && isPasswordValid
+    }
+
+    private var isEmailValid: Bool {
+        // return !email.isEmpty // Validate only email existation
+
+        // E.g.: https://stackoverflow.com/a/25471164/1054550
+        let emailRegEx = "[A-Z0-9a-z._%+-]+@[A-Za-z0-9.-]+\\.[A-Za-z]{2,64}"
+        // let emailTest = NSPredicate(format: "SELF MATCHES %@", emailRegEx)
+        // return emailTest.evaluate(with: email)
+
+        // Or: https://stackoverflow.com/a/29784455/1054550
+        return email.range(of: emailRegEx, options: .regularExpression, range: nil, locale: nil) != nil
+    }
+
+    private var isPasswordValid: Bool {
+        return !password.isEmpty
     }
 
     // MARK: - Life cycle
@@ -43,6 +63,12 @@ class LoginViewController: UIViewController {
 
     @IBAction func didPressDoneButton(_: Any) {
         RootCoordinator.shared?.didLogIn()
+    }
+
+    @IBAction func didPressRevealButton(_: Any) {
+        print("Reveal password button is pressed")
+        passwordTextField.isSecureTextEntry.toggle()
+        revealPasswordButton.setState(passwordTextField.isSecureTextEntry ? .show : .hide)
     }
 }
 
@@ -80,6 +106,10 @@ private extension LoginViewController {
 
         // Done button
         doneButton.isEnabled = false
+
+        // Reveal button
+        revealPasswordButton.isHidden = true
+        revealPasswordButton.setState(.show)
     }
 
     @objc func didTapOnView() {
@@ -108,7 +138,8 @@ private extension LoginViewController {
     }
 
     @objc func didChangeInput() {
-        doneButton.isEnabled = !email.isEmpty && !password.isEmpty
+        revealPasswordButton.isHidden = password.isEmpty
+        doneButton.isEnabled = isFormValid
     }
 }
 
