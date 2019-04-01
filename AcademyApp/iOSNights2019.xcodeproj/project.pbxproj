@@ -26,6 +26,16 @@
 		4BF302D5224420CE0058E3F3 /* LoginViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4BF302D7224420CE0058E3F3 /* LoginViewController.storyboard */; };
 		509A210404B39693543208BB /* Pods_defaults_iOSNights2019UITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 174CB4194E7142415953F0FC /* Pods_defaults_iOSNights2019UITests.framework */; };
 		929526C50E148D989230183D /* Pods_defaults_iOSNights2019Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 935DD72DA430006C5390863A /* Pods_defaults_iOSNights2019Tests.framework */; };
+		CB09D9E3224D5628002538E4 /* BlankNavigationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB09D9E2224D5628002538E4 /* BlankNavigationViewController.swift */; };
+		CB09D9E6224D57C8002538E4 /* RootCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB09D9E5224D57C8002538E4 /* RootCoordinator.swift */; };
+		CB4E48C0224D3FDA003F0DE9 /* TabBarViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CB4E48BF224D3FDA003F0DE9 /* TabBarViewController.storyboard */; };
+		CB4E48C2224D400D003F0DE9 /* TabBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB4E48C1224D400D003F0DE9 /* TabBarViewController.swift */; };
+		CB4E48C6224D420F003F0DE9 /* ProfileViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CB4E48C5224D420F003F0DE9 /* ProfileViewController.storyboard */; };
+		CB4E48C8224D4228003F0DE9 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB4E48C7224D4228003F0DE9 /* ProfileViewController.swift */; };
+		CB4E48CA224D4244003F0DE9 /* LecturesViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CB4E48C9224D4244003F0DE9 /* LecturesViewController.storyboard */; };
+		CB4E48CC224D4256003F0DE9 /* LecturesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB4E48CB224D4256003F0DE9 /* LecturesViewController.swift */; };
+		CB4E48CF224D4540003F0DE9 /* LectureViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CB4E48CE224D453F003F0DE9 /* LectureViewController.storyboard */; };
+		CB4E48D1224D4553003F0DE9 /* LectureViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB4E48D0224D4553003F0DE9 /* LectureViewController.swift */; };
 		CFE15F394C9607A9EA86E1F8 /* Pods_defaults_iOSNights2019.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2AF48D62078DB73F99202276 /* Pods_defaults_iOSNights2019.framework */; };
 /* End PBXBuildFile section */
 
@@ -87,6 +97,16 @@
 		9BBF92805D66902483759E86 /* Pods-defaults-iOSNights2019Tests.debug (production).xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-defaults-iOSNights2019Tests.debug (production).xcconfig"; path = "Pods/Target Support Files/Pods-defaults-iOSNights2019Tests/Pods-defaults-iOSNights2019Tests.debug (production).xcconfig"; sourceTree = "<group>"; };
 		A42D3A7E684E7595BA61C10B /* Pods-defaults-iOSNights2019UITests.debug (production).xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-defaults-iOSNights2019UITests.debug (production).xcconfig"; path = "Pods/Target Support Files/Pods-defaults-iOSNights2019UITests/Pods-defaults-iOSNights2019UITests.debug (production).xcconfig"; sourceTree = "<group>"; };
 		C0777C29FF8981738D53E485 /* Pods-defaults-iOSNights2019Tests.release (production).xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-defaults-iOSNights2019Tests.release (production).xcconfig"; path = "Pods/Target Support Files/Pods-defaults-iOSNights2019Tests/Pods-defaults-iOSNights2019Tests.release (production).xcconfig"; sourceTree = "<group>"; };
+		CB09D9E2224D5628002538E4 /* BlankNavigationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BlankNavigationViewController.swift; sourceTree = "<group>"; };
+		CB09D9E5224D57C8002538E4 /* RootCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootCoordinator.swift; sourceTree = "<group>"; };
+		CB4E48BF224D3FDA003F0DE9 /* TabBarViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = TabBarViewController.storyboard; sourceTree = "<group>"; };
+		CB4E48C1224D400D003F0DE9 /* TabBarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarViewController.swift; sourceTree = "<group>"; };
+		CB4E48C5224D420F003F0DE9 /* ProfileViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = ProfileViewController.storyboard; sourceTree = "<group>"; };
+		CB4E48C7224D4228003F0DE9 /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
+		CB4E48C9224D4244003F0DE9 /* LecturesViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = LecturesViewController.storyboard; sourceTree = "<group>"; };
+		CB4E48CB224D4256003F0DE9 /* LecturesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LecturesViewController.swift; sourceTree = "<group>"; };
+		CB4E48CE224D453F003F0DE9 /* LectureViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = LectureViewController.storyboard; sourceTree = "<group>"; };
+		CB4E48D0224D4553003F0DE9 /* LectureViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LectureViewController.swift; sourceTree = "<group>"; };
 		CC0182B2883044F22F861ECC /* Pods-defaults-iOSNights2019Tests.release (development).xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-defaults-iOSNights2019Tests.release (development).xcconfig"; path = "Pods/Target Support Files/Pods-defaults-iOSNights2019Tests/Pods-defaults-iOSNights2019Tests.release (development).xcconfig"; sourceTree = "<group>"; };
 		E0CDD5417EA4B20A1D9064B9 /* Pods-defaults-iOSNights2019.release (development).xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-defaults-iOSNights2019.release (development).xcconfig"; path = "Pods/Target Support Files/Pods-defaults-iOSNights2019/Pods-defaults-iOSNights2019.release (development).xcconfig"; sourceTree = "<group>"; };
 		EAC2F9FED5E212B7D62C8798 /* Pods-defaults-iOSNights2019.debug (production).xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-defaults-iOSNights2019.debug (production).xcconfig"; path = "Pods/Target Support Files/Pods-defaults-iOSNights2019/Pods-defaults-iOSNights2019.debug (production).xcconfig"; sourceTree = "<group>"; };
@@ -211,7 +231,12 @@
 		2FB7A62A2215BD1A004E6911 /* Scenes */ = {
 			isa = PBXGroup;
 			children = (
+				CB09D9E1224D55E4002538E4 /* Shared */,
+				CB4E48CD224D44F2003F0DE9 /* Lecture */,
+				CB4E48C4224D41EE003F0DE9 /* Profile */,
+				CB4E48C3224D41E6003F0DE9 /* Lectures */,
 				2FB7A62B2215BD31004E6911 /* Login */,
+				CB4E48BE224D3FB0003F0DE9 /* TabBar */,
 			);
 			path = Scenes;
 			sourceTree = "<group>";
@@ -228,6 +253,7 @@
 		2FB7A6302215C0EE004E6911 /* Common */ = {
 			isa = PBXGroup;
 			children = (
+				CB09D9E4224D5799002538E4 /* Manager */,
 				4BF302C92244163D0058E3F3 /* Utilities */,
 				4BF302C6224412C10058E3F3 /* UI */,
 			);
@@ -309,6 +335,58 @@
 				4BF302CA2244164A0058E3F3 /* UIColorExtension.swift */,
 			);
 			path = Utilities;
+			sourceTree = "<group>";
+		};
+		CB09D9E1224D55E4002538E4 /* Shared */ = {
+			isa = PBXGroup;
+			children = (
+				CB09D9E2224D5628002538E4 /* BlankNavigationViewController.swift */,
+			);
+			path = Shared;
+			sourceTree = "<group>";
+		};
+		CB09D9E4224D5799002538E4 /* Manager */ = {
+			isa = PBXGroup;
+			children = (
+				CB09D9E5224D57C8002538E4 /* RootCoordinator.swift */,
+			);
+			path = Manager;
+			sourceTree = "<group>";
+		};
+		CB4E48BE224D3FB0003F0DE9 /* TabBar */ = {
+			isa = PBXGroup;
+			children = (
+				CB4E48BF224D3FDA003F0DE9 /* TabBarViewController.storyboard */,
+				CB4E48C1224D400D003F0DE9 /* TabBarViewController.swift */,
+			);
+			path = TabBar;
+			sourceTree = "<group>";
+		};
+		CB4E48C3224D41E6003F0DE9 /* Lectures */ = {
+			isa = PBXGroup;
+			children = (
+				CB4E48C9224D4244003F0DE9 /* LecturesViewController.storyboard */,
+				CB4E48CB224D4256003F0DE9 /* LecturesViewController.swift */,
+			);
+			path = Lectures;
+			sourceTree = "<group>";
+		};
+		CB4E48C4224D41EE003F0DE9 /* Profile */ = {
+			isa = PBXGroup;
+			children = (
+				CB4E48C5224D420F003F0DE9 /* ProfileViewController.storyboard */,
+				CB4E48C7224D4228003F0DE9 /* ProfileViewController.swift */,
+			);
+			path = Profile;
+			sourceTree = "<group>";
+		};
+		CB4E48CD224D44F2003F0DE9 /* Lecture */ = {
+			isa = PBXGroup;
+			children = (
+				CB4E48CE224D453F003F0DE9 /* LectureViewController.storyboard */,
+				CB4E48D0224D4553003F0DE9 /* LectureViewController.swift */,
+			);
+			path = Lecture;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -423,12 +501,16 @@
 				2FB7A5E822156110004E6911 /* LaunchScreen.storyboard in Resources */,
 				4BF302D5224420CE0058E3F3 /* LoginViewController.storyboard in Resources */,
 				4BEF704922440F01000FCAF2 /* Maison Neue Medium.otf in Resources */,
+				CB4E48C0224D3FDA003F0DE9 /* TabBarViewController.storyboard in Resources */,
 				4BEF704722440F01000FCAF2 /* Maison Neue Demi.otf in Resources */,
 				4BF302D1224420170058E3F3 /* Localizable.strings in Resources */,
+				CB4E48CA224D4244003F0DE9 /* LecturesViewController.storyboard in Resources */,
 				4BEF704522440F01000FCAF2 /* Maison Neue Book.otf in Resources */,
 				4BEF704822440F01000FCAF2 /* trump_gothic_east_bold.ttf in Resources */,
 				4BEF704622440F01000FCAF2 /* Maison Neue Bold.otf in Resources */,
+				CB4E48C6224D420F003F0DE9 /* ProfileViewController.storyboard in Resources */,
 				2FB7A5E522156110004E6911 /* Assets.xcassets in Resources */,
+				CB4E48CF224D4540003F0DE9 /* LectureViewController.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -541,10 +623,16 @@
 			buildActionMask = 2147483647;
 			files = (
 				2FB7A62D2215BD3D004E6911 /* LoginViewController.swift in Sources */,
+				CB4E48D1224D4553003F0DE9 /* LectureViewController.swift in Sources */,
+				CB4E48CC224D4256003F0DE9 /* LecturesViewController.swift in Sources */,
 				2FB7A62722156D8B004E6911 /* EnvironmentConfiguration.swift in Sources */,
+				CB09D9E6224D57C8002538E4 /* RootCoordinator.swift in Sources */,
 				4BF302CB2244164A0058E3F3 /* UIColorExtension.swift in Sources */,
 				2FB7A5DE2215610F004E6911 /* AppDelegate.swift in Sources */,
+				CB09D9E3224D5628002538E4 /* BlankNavigationViewController.swift in Sources */,
+				CB4E48C2224D400D003F0DE9 /* TabBarViewController.swift in Sources */,
 				4BF302C8224412D50058E3F3 /* TextField.swift in Sources */,
+				CB4E48C8224D4228003F0DE9 /* ProfileViewController.swift in Sources */,
 				4BF302CD22441F260058E3F3 /* DoneButton.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
