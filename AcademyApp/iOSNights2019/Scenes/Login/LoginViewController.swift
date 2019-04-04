@@ -9,16 +9,16 @@
 import UIKit
 
 class LoginViewController: UIViewController {
-    // MARK: - Constants
-    private let doneButtonBottomPaddingKeyboardUp: CGFloat = 15
-    private let doneButtonBottomPaddingKeyboardDown: CGFloat = 47
-
     // MARK: - UI
     @IBOutlet private var emailTextField: UITextField!
     @IBOutlet private var passwordTextField: TextField!
     @IBOutlet private var doneBottomButtonConstraint: NSLayoutConstraint!
     @IBOutlet private var doneButton: DoneButton!
     @IBOutlet private var revealPasswordButton: RevealButton!
+
+    // MARK: - Constants
+    private let doneButtonBottomPaddingKeyboardUp: CGFloat = 15
+    private let doneButtonBottomPaddingKeyboardDown: CGFloat = 47
 
     // MARK: - Private properties
     private var email: String {
@@ -30,23 +30,7 @@ class LoginViewController: UIViewController {
     }
 
     private var isFormValid: Bool {
-        return isEmailValid && isPasswordValid
-    }
-
-    private var isEmailValid: Bool {
-        // return !email.isEmpty // Validate only email existation
-
-        // E.g.: https://stackoverflow.com/a/25471164/1054550
-        let emailRegEx = "[A-Z0-9a-z._%+-]+@[A-Za-z0-9.-]+\\.[A-Za-z]{2,64}"
-        // let emailTest = NSPredicate(format: "SELF MATCHES %@", emailRegEx)
-        // return emailTest.evaluate(with: email)
-
-        // Or: https://stackoverflow.com/a/29784455/1054550
-        return email.range(of: emailRegEx, options: .regularExpression, range: nil, locale: nil) != nil
-    }
-
-    private var isPasswordValid: Bool {
-        return !password.isEmpty
+        return email.isValidEmail && password.isValidPassword
     }
 
     // MARK: - Life cycle
@@ -60,7 +44,10 @@ class LoginViewController: UIViewController {
     deinit {
         print("Bye")
     }
+}
 
+// MARK: - IBActions
+private extension LoginViewController {
     @IBAction func didPressDoneButton(_: Any) {
         RootCoordinator.shared?.didLogIn()
     }
