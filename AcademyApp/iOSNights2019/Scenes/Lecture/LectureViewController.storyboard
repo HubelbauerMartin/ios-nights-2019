@@ -1,15 +1,23 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Pwa-bf-VK2">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Pwa-bf-VK2">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
         <capability name="Named colors" minToolsVersion="9.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
+    <customFonts key="customFonts">
+        <array key="Maison Neue Medium.otf">
+            <string>MaisonNeue-Medium</string>
+        </array>
+        <array key="trump_gothic_east_bold.ttf">
+            <string>TrumpGothicEast-Bold</string>
+        </array>
+    </customFonts>
     <scenes>
         <!--Lecture View Controller-->
         <scene sceneID="Sui-jd-4bs">
@@ -19,20 +27,181 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Switft I" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CYe-zM-O75" userLabel="lblName">
-                                <rect key="frame" x="161" y="333" width="53" height="21"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <nil key="highlightedColor"/>
-                            </label>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="4an-Yt-Qu8" userLabel="HeaderView">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="333.5"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="img-lecture1" translatesAutoresizingMaskIntoConstraints="NO" id="y5n-XY-ehl" userLabel="imgHeader">
+                                        <rect key="frame" x="0.0" y="0.0" width="375" height="333.5"/>
+                                    </imageView>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="img-shadow" translatesAutoresizingMaskIntoConstraints="NO" id="qfN-P7-fs2" userLabel="imgShadow">
+                                        <rect key="frame" x="0.0" y="133.5" width="375" height="200"/>
+                                    </imageView>
+                                    <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="AS9-5a-0GO" userLabel="sgmContent">
+                                        <rect key="frame" x="10" y="289.5" width="355" height="35"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="34" id="eTM-cX-wcA"/>
+                                        </constraints>
+                                        <segments>
+                                            <segment title="About"/>
+                                            <segment title="Assignment"/>
+                                        </segments>
+                                        <color key="tintColor" red="0.93287426233291626" green="0.049407593905925751" blue="0.19994965195655823" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        <connections>
+                                            <action selector="segmentAction:" destination="Pwa-bf-VK2" eventType="valueChanged" id="uTR-1m-33N"/>
+                                        </connections>
+                                    </segmentedControl>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="SWIFT I (PLAYGROUND)" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hdV-Cx-M6b" userLabel="lblTitle">
+                                        <rect key="frame" x="20" y="150" width="285" height="119.5"/>
+                                        <fontDescription key="fontDescription" name="TrumpGothicEast-Bold" family="Trump Gothic East" pointSize="50"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstItem="y5n-XY-ehl" firstAttribute="leading" secondItem="4an-Yt-Qu8" secondAttribute="leading" id="5XW-dT-RUT"/>
+                                    <constraint firstItem="y5n-XY-ehl" firstAttribute="top" secondItem="4an-Yt-Qu8" secondAttribute="top" id="8Wc-Lo-6oD"/>
+                                    <constraint firstAttribute="trailing" secondItem="AS9-5a-0GO" secondAttribute="trailing" constant="10" id="AGV-jW-mHN"/>
+                                    <constraint firstAttribute="bottom" secondItem="y5n-XY-ehl" secondAttribute="bottom" id="LYD-TC-Raa"/>
+                                    <constraint firstAttribute="bottom" secondItem="AS9-5a-0GO" secondAttribute="bottom" constant="10" id="LpP-9M-OAW"/>
+                                    <constraint firstItem="qfN-P7-fs2" firstAttribute="height" secondItem="y5n-XY-ehl" secondAttribute="height" multiplier="0.6" id="Oai-GT-Oq4"/>
+                                    <constraint firstItem="hdV-Cx-M6b" firstAttribute="leading" secondItem="4an-Yt-Qu8" secondAttribute="leading" constant="20" id="PuI-Ub-JOK"/>
+                                    <constraint firstAttribute="trailing" secondItem="hdV-Cx-M6b" secondAttribute="trailing" constant="70" id="R7g-aY-ZYL"/>
+                                    <constraint firstItem="AS9-5a-0GO" firstAttribute="leading" secondItem="4an-Yt-Qu8" secondAttribute="leading" constant="10" id="Tvd-LJ-nW0"/>
+                                    <constraint firstAttribute="trailing" secondItem="y5n-XY-ehl" secondAttribute="trailing" id="XAe-6i-dJw"/>
+                                    <constraint firstItem="qfN-P7-fs2" firstAttribute="trailing" secondItem="y5n-XY-ehl" secondAttribute="trailing" id="bbs-BT-w0u"/>
+                                    <constraint firstItem="qfN-P7-fs2" firstAttribute="bottom" secondItem="y5n-XY-ehl" secondAttribute="bottom" id="djN-lQ-PPz"/>
+                                    <constraint firstItem="AS9-5a-0GO" firstAttribute="top" secondItem="hdV-Cx-M6b" secondAttribute="bottom" constant="20" id="jVh-oc-fGK"/>
+                                    <constraint firstItem="qfN-P7-fs2" firstAttribute="leading" secondItem="y5n-XY-ehl" secondAttribute="leading" id="nou-4z-J8h"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ScW-qg-Lho" userLabel="ContentView">
+                                <rect key="frame" x="0.0" y="385.5" width="375" height="281.5"/>
+                                <subviews>
+                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" editable="NO" usesAttributedText="YES" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7HE-uX-9Fo" userLabel="txtContentView">
+                                        <rect key="frame" x="20" y="0.0" width="335" height="261.5"/>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <attributedString key="attributedText">
+                                            <fragment>
+                                                <mutableString key="content">LCD screens are uniquely modern in style, and the liquid crystals that make them work have allowed humanity to create slimmer, more portable technology than we’ve ever had access to before. From your wrist watch to your laptop, a lot of the on the go electronics that we tote from place to place are only possible because of their thin, light LCD display screens. Liquid crystal display (LCD) technology still has some stumbling blocks in its path that can make it unreliable at times, but on the whole the invention of the LCD screen has allowed great leaps forward in global technological progress.</mutableString>
+                                                <attributes>
+                                                    <color key="NSColor" red="0.99999000000000005" green="0.99999000000000005" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                    <font key="NSFont" size="13" name="MaisonNeue-Medium"/>
+                                                    <real key="NSKern" value="0.0"/>
+                                                    <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="leftToRight" minimumLineHeight="25" maximumLineHeight="25" tighteningFactorForTruncation="0.0" allowsDefaultTighteningForTruncation="NO">
+                                                        <tabStops>
+                                                            <textTab alignment="left" location="28">
+                                                                <options/>
+                                                            </textTab>
+                                                            <textTab alignment="left" location="56">
+                                                                <options/>
+                                                            </textTab>
+                                                            <textTab alignment="left" location="84">
+                                                                <options/>
+                                                            </textTab>
+                                                            <textTab alignment="left" location="112">
+                                                                <options/>
+                                                            </textTab>
+                                                            <textTab alignment="left" location="140">
+                                                                <options/>
+                                                            </textTab>
+                                                            <textTab alignment="left" location="168">
+                                                                <options/>
+                                                            </textTab>
+                                                            <textTab alignment="left" location="196">
+                                                                <options/>
+                                                            </textTab>
+                                                            <textTab alignment="left" location="224">
+                                                                <options/>
+                                                            </textTab>
+                                                            <textTab alignment="left" location="252">
+                                                                <options/>
+                                                            </textTab>
+                                                            <textTab alignment="left" location="280">
+                                                                <options/>
+                                                            </textTab>
+                                                            <textTab alignment="left" location="308">
+                                                                <options/>
+                                                            </textTab>
+                                                            <textTab alignment="left" location="336">
+                                                                <options/>
+                                                            </textTab>
+                                                        </tabStops>
+                                                    </paragraphStyle>
+                                                </attributes>
+                                            </fragment>
+                                        </attributedString>
+                                        <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                    </textView>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="img-shadow" translatesAutoresizingMaskIntoConstraints="NO" id="uAn-ar-JJr" userLabel="imgShadow">
+                                        <rect key="frame" x="0.0" y="141.5" width="375" height="140"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="140" id="eU0-kH-6aE"/>
+                                        </constraints>
+                                    </imageView>
+                                </subviews>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstItem="7HE-uX-9Fo" firstAttribute="leading" secondItem="ScW-qg-Lho" secondAttribute="leading" constant="20" id="4d1-se-8SS"/>
+                                    <constraint firstAttribute="bottom" secondItem="uAn-ar-JJr" secondAttribute="bottom" id="GPj-5H-ml9"/>
+                                    <constraint firstItem="7HE-uX-9Fo" firstAttribute="top" secondItem="ScW-qg-Lho" secondAttribute="top" id="I1l-8C-pci"/>
+                                    <constraint firstItem="uAn-ar-JJr" firstAttribute="leading" secondItem="ScW-qg-Lho" secondAttribute="leading" id="bzu-6j-Mhg"/>
+                                    <constraint firstAttribute="trailing" secondItem="7HE-uX-9Fo" secondAttribute="trailing" constant="20" id="gQF-BT-DgG"/>
+                                    <constraint firstAttribute="trailing" secondItem="uAn-ar-JJr" secondAttribute="trailing" id="peF-X7-iiI"/>
+                                    <constraint firstAttribute="bottom" secondItem="7HE-uX-9Fo" secondAttribute="bottom" constant="20" id="vPo-be-an6"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="UAu-vk-0VV" userLabel="AttendedView">
+                                <rect key="frame" x="0.0" y="333.5" width="375" height="52"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Attended" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jPu-Cf-je8" userLabel="lblAttended">
+                                        <rect key="frame" x="20" y="18" width="68" height="16"/>
+                                        <fontDescription key="fontDescription" name="MaisonNeue-Medium" family="Maison Neue" pointSize="16"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="1vn-BP-LeJ" userLabel="switchAttended">
+                                        <rect key="frame" x="306" y="10.5" width="51" height="31"/>
+                                        <color key="onTintColor" red="0.9995073676109314" green="0.017021540552377701" blue="0.14727979898452759" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <connections>
+                                            <action selector="switchAction:" destination="Pwa-bf-VK2" eventType="valueChanged" id="4ca-we-uAY"/>
+                                        </connections>
+                                    </switch>
+                                </subviews>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstItem="1vn-BP-LeJ" firstAttribute="centerY" secondItem="UAu-vk-0VV" secondAttribute="centerY" id="29x-52-jIn"/>
+                                    <constraint firstItem="jPu-Cf-je8" firstAttribute="leading" secondItem="UAu-vk-0VV" secondAttribute="leading" constant="20" id="HY5-OZ-3eu"/>
+                                    <constraint firstItem="jPu-Cf-je8" firstAttribute="centerY" secondItem="UAu-vk-0VV" secondAttribute="centerY" id="Hrr-JW-Zrb"/>
+                                    <constraint firstAttribute="height" constant="52" id="cTJ-vc-xiL"/>
+                                    <constraint firstAttribute="trailing" secondItem="1vn-BP-LeJ" secondAttribute="trailing" constant="20" id="vXE-nM-6rF"/>
+                                </constraints>
+                            </view>
                         </subviews>
                         <color key="backgroundColor" name="screenBackground"/>
                         <constraints>
-                            <constraint firstItem="CYe-zM-O75" firstAttribute="centerX" secondItem="sdK-jc-Weo" secondAttribute="centerX" id="Hth-B4-Or7"/>
-                            <constraint firstItem="CYe-zM-O75" firstAttribute="centerY" secondItem="sdK-jc-Weo" secondAttribute="centerY" id="ohV-1S-Z3y"/>
+                            <constraint firstItem="4an-Yt-Qu8" firstAttribute="leading" secondItem="sdK-jc-Weo" secondAttribute="leading" id="1bs-4C-wOE"/>
+                            <constraint firstItem="4an-Yt-Qu8" firstAttribute="height" secondItem="bSA-CP-fSx" secondAttribute="height" multiplier="0.5" id="9mA-sv-oko"/>
+                            <constraint firstItem="UAu-vk-0VV" firstAttribute="leading" secondItem="sdK-jc-Weo" secondAttribute="leading" id="Ayv-pu-UxN"/>
+                            <constraint firstItem="ScW-qg-Lho" firstAttribute="top" secondItem="UAu-vk-0VV" secondAttribute="bottom" id="NWy-eO-njc"/>
+                            <constraint firstItem="UAu-vk-0VV" firstAttribute="top" secondItem="4an-Yt-Qu8" secondAttribute="bottom" id="WN7-h8-5wv"/>
+                            <constraint firstItem="ScW-qg-Lho" firstAttribute="leading" secondItem="sdK-jc-Weo" secondAttribute="leading" id="cus-Iu-wJq"/>
+                            <constraint firstItem="sdK-jc-Weo" firstAttribute="bottom" secondItem="ScW-qg-Lho" secondAttribute="bottom" id="eys-F5-i66"/>
+                            <constraint firstItem="sdK-jc-Weo" firstAttribute="trailing" secondItem="UAu-vk-0VV" secondAttribute="trailing" id="hXu-aH-Mer"/>
+                            <constraint firstItem="4an-Yt-Qu8" firstAttribute="top" secondItem="bSA-CP-fSx" secondAttribute="top" id="lWq-M9-mOk"/>
+                            <constraint firstItem="sdK-jc-Weo" firstAttribute="trailing" secondItem="ScW-qg-Lho" secondAttribute="trailing" id="mhe-1n-wMQ"/>
+                            <constraint firstItem="sdK-jc-Weo" firstAttribute="trailing" secondItem="4an-Yt-Qu8" secondAttribute="trailing" id="sei-jC-thg"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="sdK-jc-Weo"/>
                     </view>
+                    <connections>
+                        <outlet property="attendedSwitch" destination="1vn-BP-LeJ" id="CwW-bY-Dos"/>
+                        <outlet property="contentControl" destination="AS9-5a-0GO" id="LAR-Aj-tTI"/>
+                        <outlet property="imgHeader" destination="y5n-XY-ehl" id="z1V-2j-C7X"/>
+                        <outlet property="lblTitle" destination="hdV-Cx-M6b" id="bhK-lI-zjx"/>
+                        <outlet property="shadownHeightConstraint" destination="eU0-kH-6aE" id="xAu-zt-G1I"/>
+                        <outlet property="txtContent" destination="7HE-uX-9Fo" id="jXv-sp-bxL"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="xog-dG-U6t" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -40,6 +209,8 @@
         </scene>
     </scenes>
     <resources>
+        <image name="img-lecture1" width="375" height="400"/>
+        <image name="img-shadow" width="1" height="223"/>
         <namedColor name="screenBackground">
             <color red="0.066666666666666666" green="0.078431372549019607" blue="0.086274509803921567" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
