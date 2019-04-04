@@ -9,16 +9,16 @@
 import UIKit
 
 class LoginViewController: UIViewController {
-    // MARK: - Constants
-    private let doneButtonBottomPaddingKeyboardUp: CGFloat = 15
-    private let doneButtonBottomPaddingKeyboardDown: CGFloat = 47
-
     // MARK: - UI
     @IBOutlet private var emailTextField: UITextField!
     @IBOutlet private var passwordTextField: TextField!
     @IBOutlet private var doneBottomButtonConstraint: NSLayoutConstraint!
     @IBOutlet private var doneButton: DoneButton!
     @IBOutlet private var revealPasswordButton: RevealButton!
+
+    // MARK: - Constants
+    private let doneButtonBottomPaddingKeyboardUp: CGFloat = 15
+    private let doneButtonBottomPaddingKeyboardDown: CGFloat = 47
 
     // MARK: - Private properties
     private var email: String {

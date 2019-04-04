@@ -20,11 +20,11 @@ private extension ProfileViewController {
     @IBAction func settingAction() {
         let settingsAlert = UIAlertController(title: nil, message: nil, preferredStyle: .actionSheet)
 
-        let signOutAction = UIAlertAction(title: "Sign Out", style: .destructive) { _ in
+        let signOutAction = UIAlertAction(title: NSLocalizedString("Sign Out", comment: ""), style: .destructive) { _ in
             RootCoordinator.shared?.didLogOut()
         }
 
-        let cancelAction = UIAlertAction(title: "Cancel", style: .cancel) { _ in }
+        let cancelAction = UIAlertAction(title: NSLocalizedString("Cancel", comment: ""), style: .cancel) { _ in }
 
         settingsAlert.addAction(signOutAction)
         settingsAlert.addAction(cancelAction)

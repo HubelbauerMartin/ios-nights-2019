@@ -33,4 +33,9 @@ extension UIColor {
         // swiftlint:disable:next force_unwrapping
         return UIColor(named: "red")!
     }
+
+    static var appBarBackground: UIColor {
+        // swiftlint:disable:next force_unwrapping
+        return UIColor(named: "tabBarBackground")!
+    }
 }
