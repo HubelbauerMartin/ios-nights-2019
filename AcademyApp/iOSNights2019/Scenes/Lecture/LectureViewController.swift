@@ -11,18 +11,18 @@ import UIKit
 class LectureViewController: UIViewController {
     // MARK: - Outlets content
 
-    @IBOutlet var imgHeader: UIImageView!
-    @IBOutlet var lblTitle: UILabel!
-    @IBOutlet var txtContent: UITextView!
+    @IBOutlet private var imgHeader: UIImageView!
+    @IBOutlet private var lblTitle: UILabel!
+    @IBOutlet private var txtContent: UITextView!
 
     // MARK: - Outlets control
 
-    @IBOutlet var contentControl: UISegmentedControl!
-    @IBOutlet var attendedSwitch: UISwitch!
+    @IBOutlet private var contentControl: UISegmentedControl!
+    @IBOutlet private var attendedSwitch: UISwitch!
 
     // MARK: - Outlets constraints
 
-    @IBOutlet var shadownHeightConstraint: NSLayoutConstraint!
+    @IBOutlet private var shadownHeightConstraint: NSLayoutConstraint!
 
     // MARK: - Object lifecycle
     override func viewDidLoad() {

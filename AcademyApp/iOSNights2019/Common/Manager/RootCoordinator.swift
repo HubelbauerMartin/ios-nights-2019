@@ -11,6 +11,7 @@ import UIKit
 class RootCoordinator {
     // MARK: - Variables
     static var shared: RootCoordinator?
+    // swiftlint:disable:next weak_delegate
     private var appDelegate: AppDelegate
 
     // MARK: - Object lifecycle

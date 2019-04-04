@@ -13,9 +13,10 @@ class ProfileViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
     }
+}
 
-    // MARK: - Action
-
+// MARK: - Action
+private extension ProfileViewController {
     @IBAction func settingAction() {
         let settingsAlert = UIAlertController(title: nil, message: nil, preferredStyle: .actionSheet)
 
