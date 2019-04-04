@@ -20,5 +20,6 @@ private extension TextField {
     func setupUI() {
         textColor = .white
         keyboardAppearance = .dark
+        defaultTextAttributes.updateValue(1, forKey: NSAttributedString.Key.kern) // Space between letters
     }
 }

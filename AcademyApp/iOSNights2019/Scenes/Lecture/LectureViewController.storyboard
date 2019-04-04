@@ -83,51 +83,12 @@
                                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <attributedString key="attributedText">
                                             <fragment>
-                                                <mutableString key="content">LCD screens are uniquely modern in style, and the liquid crystals that make them work have allowed humanity to create slimmer, more portable technology than we’ve ever had access to before. From your wrist watch to your laptop, a lot of the on the go electronics that we tote from place to place are only possible because of their thin, light LCD display screens. Liquid crystal display (LCD) technology still has some stumbling blocks in its path that can make it unreliable at times, but on the whole the invention of the LCD screen has allowed great leaps forward in global technological progress.</mutableString>
+                                                <string key="content">LCD screens are uniquely modern in style, and the liquid crystals that make them work have allowed humanity to create slimmer, more portable technology than we’ve ever had access to before. From your wrist watch to your laptop, a lot of the on the go electronics that we tote from place to place are only possible because of their thin, light LCD display screens. Liquid crystal display (LCD) technology still has some stumbling blocks in its path that can make it unreliable at times, but on the whole the invention of the LCD screen has allowed great leaps forward in global technological progress.</string>
                                                 <attributes>
                                                     <color key="NSColor" red="0.99999000000000005" green="0.99999000000000005" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                     <font key="NSFont" size="13" name="MaisonNeue-Medium"/>
                                                     <real key="NSKern" value="0.0"/>
-                                                    <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="leftToRight" minimumLineHeight="25" maximumLineHeight="25" tighteningFactorForTruncation="0.0" allowsDefaultTighteningForTruncation="NO">
-                                                        <tabStops>
-                                                            <textTab alignment="left" location="28">
-                                                                <options/>
-                                                            </textTab>
-                                                            <textTab alignment="left" location="56">
-                                                                <options/>
-                                                            </textTab>
-                                                            <textTab alignment="left" location="84">
-                                                                <options/>
-                                                            </textTab>
-                                                            <textTab alignment="left" location="112">
-                                                                <options/>
-                                                            </textTab>
-                                                            <textTab alignment="left" location="140">
-                                                                <options/>
-                                                            </textTab>
-                                                            <textTab alignment="left" location="168">
-                                                                <options/>
-                                                            </textTab>
-                                                            <textTab alignment="left" location="196">
-                                                                <options/>
-                                                            </textTab>
-                                                            <textTab alignment="left" location="224">
-                                                                <options/>
-                                                            </textTab>
-                                                            <textTab alignment="left" location="252">
-                                                                <options/>
-                                                            </textTab>
-                                                            <textTab alignment="left" location="280">
-                                                                <options/>
-                                                            </textTab>
-                                                            <textTab alignment="left" location="308">
-                                                                <options/>
-                                                            </textTab>
-                                                            <textTab alignment="left" location="336">
-                                                                <options/>
-                                                            </textTab>
-                                                        </tabStops>
-                                                    </paragraphStyle>
+                                                    <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="leftToRight" minimumLineHeight="25" maximumLineHeight="25" tighteningFactorForTruncation="0.0" allowsDefaultTighteningForTruncation="NO"/>
                                                 </attributes>
                                             </fragment>
                                         </attributedString>
@@ -167,13 +128,23 @@
                                             <action selector="switchAction:" destination="Pwa-bf-VK2" eventType="valueChanged" id="4ca-we-uAY"/>
                                         </connections>
                                     </switch>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="LIq-ul-3WH">
+                                        <rect key="frame" x="0.0" y="51" width="375" height="1"/>
+                                        <color key="backgroundColor" name="separator"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="1" id="HqV-KT-BvD"/>
+                                        </constraints>
+                                    </view>
                                 </subviews>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
                                     <constraint firstItem="1vn-BP-LeJ" firstAttribute="centerY" secondItem="UAu-vk-0VV" secondAttribute="centerY" id="29x-52-jIn"/>
+                                    <constraint firstItem="LIq-ul-3WH" firstAttribute="leading" secondItem="UAu-vk-0VV" secondAttribute="leading" id="ExM-Du-5m0"/>
                                     <constraint firstItem="jPu-Cf-je8" firstAttribute="leading" secondItem="UAu-vk-0VV" secondAttribute="leading" constant="20" id="HY5-OZ-3eu"/>
                                     <constraint firstItem="jPu-Cf-je8" firstAttribute="centerY" secondItem="UAu-vk-0VV" secondAttribute="centerY" id="Hrr-JW-Zrb"/>
                                     <constraint firstAttribute="height" constant="52" id="cTJ-vc-xiL"/>
+                                    <constraint firstAttribute="trailing" secondItem="LIq-ul-3WH" secondAttribute="trailing" id="kJk-zD-dsD"/>
+                                    <constraint firstAttribute="bottom" secondItem="LIq-ul-3WH" secondAttribute="bottom" id="mxQ-NM-k0M"/>
                                     <constraint firstAttribute="trailing" secondItem="1vn-BP-LeJ" secondAttribute="trailing" constant="20" id="vXE-nM-6rF"/>
                                 </constraints>
                             </view>
@@ -213,6 +184,9 @@
         <image name="img-shadow" width="1" height="223"/>
         <namedColor name="screenBackground">
             <color red="0.066666666666666666" green="0.078431372549019607" blue="0.086274509803921567" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="separator">
+            <color red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
     </resources>
 </document>

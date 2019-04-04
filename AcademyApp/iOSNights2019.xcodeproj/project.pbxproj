@@ -14,11 +14,7 @@
 		2FB7A5FE22156110004E6911 /* ExampleiOSNights2019UITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FB7A5FD22156110004E6911 /* ExampleiOSNights2019UITests.swift */; };
 		2FB7A62722156D8B004E6911 /* EnvironmentConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FB7A62622156D8B004E6911 /* EnvironmentConfiguration.swift */; };
 		2FB7A62D2215BD3D004E6911 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FB7A62C2215BD3D004E6911 /* LoginViewController.swift */; };
-		4BEF704522440F01000FCAF2 /* Maison Neue Book.otf in Resources */ = {isa = PBXBuildFile; fileRef = 4BEF704022440F01000FCAF2 /* Maison Neue Book.otf */; };
-		4BEF704622440F01000FCAF2 /* Maison Neue Bold.otf in Resources */ = {isa = PBXBuildFile; fileRef = 4BEF704122440F01000FCAF2 /* Maison Neue Bold.otf */; };
-		4BEF704722440F01000FCAF2 /* Maison Neue Demi.otf in Resources */ = {isa = PBXBuildFile; fileRef = 4BEF704222440F01000FCAF2 /* Maison Neue Demi.otf */; };
-		4BEF704822440F01000FCAF2 /* trump_gothic_east_bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 4BEF704322440F01000FCAF2 /* trump_gothic_east_bold.ttf */; };
-		4BEF704922440F01000FCAF2 /* Maison Neue Medium.otf in Resources */ = {isa = PBXBuildFile; fileRef = 4BEF704422440F01000FCAF2 /* Maison Neue Medium.otf */; };
+		4BF0A299224CD95600A91666 /* RevealButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BF0A298224CD95600A91666 /* RevealButton.swift */; };
 		4BF302C8224412D50058E3F3 /* TextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BF302C7224412D50058E3F3 /* TextField.swift */; };
 		4BF302CB2244164A0058E3F3 /* UIColorExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BF302CA2244164A0058E3F3 /* UIColorExtension.swift */; };
 		4BF302CD22441F260058E3F3 /* DoneButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BF302CC22441F260058E3F3 /* DoneButton.swift */; };
@@ -26,6 +22,11 @@
 		4BF302D5224420CE0058E3F3 /* LoginViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4BF302D7224420CE0058E3F3 /* LoginViewController.storyboard */; };
 		509A210404B39693543208BB /* Pods_defaults_iOSNights2019UITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 174CB4194E7142415953F0FC /* Pods_defaults_iOSNights2019UITests.framework */; };
 		929526C50E148D989230183D /* Pods_defaults_iOSNights2019Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 935DD72DA430006C5390863A /* Pods_defaults_iOSNights2019Tests.framework */; };
+		C1607B18225287C300CCB9A7 /* Maison Neue Demi.otf in Resources */ = {isa = PBXBuildFile; fileRef = C1607B13225287C300CCB9A7 /* Maison Neue Demi.otf */; };
+		C1607B19225287C300CCB9A7 /* Maison Neue Medium.otf in Resources */ = {isa = PBXBuildFile; fileRef = C1607B14225287C300CCB9A7 /* Maison Neue Medium.otf */; };
+		C1607B1A225287C300CCB9A7 /* Maison Neue Book.otf in Resources */ = {isa = PBXBuildFile; fileRef = C1607B15225287C300CCB9A7 /* Maison Neue Book.otf */; };
+		C1607B1B225287C300CCB9A7 /* Maison Neue Bold.otf in Resources */ = {isa = PBXBuildFile; fileRef = C1607B16225287C300CCB9A7 /* Maison Neue Bold.otf */; };
+		C1607B1C225287C300CCB9A7 /* trump_gothic_east_bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = C1607B17225287C300CCB9A7 /* trump_gothic_east_bold.ttf */; };
 		CB09D9E3224D5628002538E4 /* BlankNavigationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB09D9E2224D5628002538E4 /* BlankNavigationViewController.swift */; };
 		CB09D9E6224D57C8002538E4 /* RootCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB09D9E5224D57C8002538E4 /* RootCoordinator.swift */; };
 		CB4E48C0224D3FDA003F0DE9 /* TabBarViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CB4E48BF224D3FDA003F0DE9 /* TabBarViewController.storyboard */; };
@@ -84,6 +85,7 @@
 		4BEF704222440F01000FCAF2 /* Maison Neue Demi.otf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Maison Neue Demi.otf"; path = "../Resources/Fonts/Maison Neue Demi.otf"; sourceTree = SOURCE_ROOT; };
 		4BEF704322440F01000FCAF2 /* trump_gothic_east_bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = trump_gothic_east_bold.ttf; path = ../Resources/Fonts/trump_gothic_east_bold.ttf; sourceTree = SOURCE_ROOT; };
 		4BEF704422440F01000FCAF2 /* Maison Neue Medium.otf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Maison Neue Medium.otf"; path = "../Resources/Fonts/Maison Neue Medium.otf"; sourceTree = SOURCE_ROOT; };
+		4BF0A298224CD95600A91666 /* RevealButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RevealButton.swift; sourceTree = "<group>"; };
 		4BF302C7224412D50058E3F3 /* TextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextField.swift; sourceTree = "<group>"; };
 		4BF302CA2244164A0058E3F3 /* UIColorExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIColorExtension.swift; sourceTree = "<group>"; };
 		4BF302CC22441F260058E3F3 /* DoneButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DoneButton.swift; sourceTree = "<group>"; };
@@ -97,6 +99,11 @@
 		9BBF92805D66902483759E86 /* Pods-defaults-iOSNights2019Tests.debug (production).xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-defaults-iOSNights2019Tests.debug (production).xcconfig"; path = "Pods/Target Support Files/Pods-defaults-iOSNights2019Tests/Pods-defaults-iOSNights2019Tests.debug (production).xcconfig"; sourceTree = "<group>"; };
 		A42D3A7E684E7595BA61C10B /* Pods-defaults-iOSNights2019UITests.debug (production).xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-defaults-iOSNights2019UITests.debug (production).xcconfig"; path = "Pods/Target Support Files/Pods-defaults-iOSNights2019UITests/Pods-defaults-iOSNights2019UITests.debug (production).xcconfig"; sourceTree = "<group>"; };
 		C0777C29FF8981738D53E485 /* Pods-defaults-iOSNights2019Tests.release (production).xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-defaults-iOSNights2019Tests.release (production).xcconfig"; path = "Pods/Target Support Files/Pods-defaults-iOSNights2019Tests/Pods-defaults-iOSNights2019Tests.release (production).xcconfig"; sourceTree = "<group>"; };
+		C1607B13225287C300CCB9A7 /* Maison Neue Demi.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Maison Neue Demi.otf"; sourceTree = "<group>"; };
+		C1607B14225287C300CCB9A7 /* Maison Neue Medium.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Maison Neue Medium.otf"; sourceTree = "<group>"; };
+		C1607B15225287C300CCB9A7 /* Maison Neue Book.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Maison Neue Book.otf"; sourceTree = "<group>"; };
+		C1607B16225287C300CCB9A7 /* Maison Neue Bold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Maison Neue Bold.otf"; sourceTree = "<group>"; };
+		C1607B17225287C300CCB9A7 /* trump_gothic_east_bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = trump_gothic_east_bold.ttf; sourceTree = "<group>"; };
 		CB09D9E2224D5628002538E4 /* BlankNavigationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BlankNavigationViewController.swift; sourceTree = "<group>"; };
 		CB09D9E5224D57C8002538E4 /* RootCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootCoordinator.swift; sourceTree = "<group>"; };
 		CB4E48BF224D3FDA003F0DE9 /* TabBarViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = TabBarViewController.storyboard; sourceTree = "<group>"; };
@@ -190,13 +197,13 @@
 				2FB7A6332215C11F004E6911 /* API */,
 				2FB7A6312215C0F5004E6911 /* Models */,
 				2FB7A62A2215BD1A004E6911 /* Scenes */,
+				4BEF703D22440ED8000FCAF2 /* Resources */,
 				2FB7A5DD2215610F004E6911 /* AppDelegate.swift */,
 				2FB7A5E422156110004E6911 /* Assets.xcassets */,
 				2FB7A5E622156110004E6911 /* LaunchScreen.storyboard */,
 				2FB7A5E922156110004E6911 /* Info.plist */,
 				2FB7A62622156D8B004E6911 /* EnvironmentConfiguration.swift */,
 				4BF302D3224420170058E3F3 /* Localizable.strings */,
-				4BEF703D22440ED8000FCAF2 /* Resources */,
 			);
 			path = iOSNights2019;
 			sourceTree = "<group>";
@@ -310,11 +317,11 @@
 		4BEF703F22440F01000FCAF2 /* Fonts */ = {
 			isa = PBXGroup;
 			children = (
-				4BEF704022440F01000FCAF2 /* Maison Neue Book.otf */,
-				4BEF704122440F01000FCAF2 /* Maison Neue Bold.otf */,
-				4BEF704222440F01000FCAF2 /* Maison Neue Demi.otf */,
-				4BEF704322440F01000FCAF2 /* trump_gothic_east_bold.ttf */,
-				4BEF704422440F01000FCAF2 /* Maison Neue Medium.otf */,
+				C1607B16225287C300CCB9A7 /* Maison Neue Bold.otf */,
+				C1607B15225287C300CCB9A7 /* Maison Neue Book.otf */,
+				C1607B13225287C300CCB9A7 /* Maison Neue Demi.otf */,
+				C1607B14225287C300CCB9A7 /* Maison Neue Medium.otf */,
+				C1607B17225287C300CCB9A7 /* trump_gothic_east_bold.ttf */,
 			);
 			name = Fonts;
 			path = ../../../Resources/Fonts;
@@ -325,6 +332,7 @@
 			children = (
 				4BF302C7224412D50058E3F3 /* TextField.swift */,
 				4BF302CC22441F260058E3F3 /* DoneButton.swift */,
+				4BF0A298224CD95600A91666 /* RevealButton.swift */,
 			);
 			path = UI;
 			sourceTree = "<group>";
@@ -498,16 +506,16 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C1607B1B225287C300CCB9A7 /* Maison Neue Bold.otf in Resources */,
+				C1607B19225287C300CCB9A7 /* Maison Neue Medium.otf in Resources */,
+				C1607B18225287C300CCB9A7 /* Maison Neue Demi.otf in Resources */,
+				C1607B1A225287C300CCB9A7 /* Maison Neue Book.otf in Resources */,
 				2FB7A5E822156110004E6911 /* LaunchScreen.storyboard in Resources */,
 				4BF302D5224420CE0058E3F3 /* LoginViewController.storyboard in Resources */,
-				4BEF704922440F01000FCAF2 /* Maison Neue Medium.otf in Resources */,
 				CB4E48C0224D3FDA003F0DE9 /* TabBarViewController.storyboard in Resources */,
-				4BEF704722440F01000FCAF2 /* Maison Neue Demi.otf in Resources */,
 				4BF302D1224420170058E3F3 /* Localizable.strings in Resources */,
+				C1607B1C225287C300CCB9A7 /* trump_gothic_east_bold.ttf in Resources */,
 				CB4E48CA224D4244003F0DE9 /* LecturesViewController.storyboard in Resources */,
-				4BEF704522440F01000FCAF2 /* Maison Neue Book.otf in Resources */,
-				4BEF704822440F01000FCAF2 /* trump_gothic_east_bold.ttf in Resources */,
-				4BEF704622440F01000FCAF2 /* Maison Neue Bold.otf in Resources */,
 				CB4E48C6224D420F003F0DE9 /* ProfileViewController.storyboard in Resources */,
 				2FB7A5E522156110004E6911 /* Assets.xcassets in Resources */,
 				CB4E48CF224D4540003F0DE9 /* LectureViewController.storyboard in Resources */,
@@ -629,6 +637,7 @@
 				CB09D9E6224D57C8002538E4 /* RootCoordinator.swift in Sources */,
 				4BF302CB2244164A0058E3F3 /* UIColorExtension.swift in Sources */,
 				2FB7A5DE2215610F004E6911 /* AppDelegate.swift in Sources */,
+				4BF0A299224CD95600A91666 /* RevealButton.swift in Sources */,
 				CB09D9E3224D5628002538E4 /* BlankNavigationViewController.swift in Sources */,
 				CB4E48C2224D400D003F0DE9 /* TabBarViewController.swift in Sources */,
 				4BF302C8224412D50058E3F3 /* TextField.swift in Sources */,
