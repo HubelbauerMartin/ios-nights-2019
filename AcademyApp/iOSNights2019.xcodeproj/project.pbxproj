@@ -468,13 +468,16 @@
 				TargetAttributes = {
 					2FB7A5D92215610F004E6911 = {
 						CreatedOnToolsVersion = 10.1;
+						LastSwiftMigration = 1020;
 					};
 					2FB7A5ED22156110004E6911 = {
 						CreatedOnToolsVersion = 10.1;
+						LastSwiftMigration = 1020;
 						TestTargetID = 2FB7A5D92215610F004E6911;
 					};
 					2FB7A5F822156110004E6911 = {
 						CreatedOnToolsVersion = 10.1;
+						LastSwiftMigration = 1020;
 						TestTargetID = 2FB7A5D92215610F004E6911;
 					};
 				};
@@ -863,7 +866,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = enterprise.com.strv.iOSNights2019.dev;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "STRV s.r.o. Enterprise - Development PP";
-				SWIFT_VERSION = 4.2;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = "Debug (Development)";
@@ -884,7 +887,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = enterprise.com.strv.iOSNights2019.dev;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "STRV s.r.o. Enterprise - Development PP";
-				SWIFT_VERSION = 4.2;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = "Release (Development)";
@@ -904,7 +907,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.strv.iOSNights2019Tests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.2;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/iOSNights2019.app/iOSNights2019";
 			};
@@ -925,7 +928,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.strv.iOSNights2019Tests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.2;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/iOSNights2019.app/iOSNights2019";
 			};
@@ -945,7 +948,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.strv.iOSNights2019UITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.2;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_TARGET_NAME = iOSNights2019;
 			};
@@ -965,7 +968,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.strv.iOSNights2019UITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.2;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_TARGET_NAME = iOSNights2019;
 			};
