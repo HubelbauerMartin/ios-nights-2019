@@ -13,9 +13,10 @@ class LecturesViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
     }
+}
 
-    // MARK: - Action
-
+// MARK: - Action
+private extension LecturesViewController {
     @IBAction func lectureDetailAction() {
         let storyboard = UIStoryboard(name: "LectureViewController", bundle: nil)
 
