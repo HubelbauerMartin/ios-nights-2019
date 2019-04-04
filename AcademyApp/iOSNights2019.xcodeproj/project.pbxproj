@@ -893,7 +893,6 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 1098B34FD0D54AFD33DE7981 /* Pods-defaults-iOSNights2019Tests.debug (development).xcconfig */;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = VKFK92G6KE;
@@ -915,7 +914,6 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = CC0182B2883044F22F861ECC /* Pods-defaults-iOSNights2019Tests.release (development).xcconfig */;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = VKFK92G6KE;
@@ -937,7 +935,6 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 175FB0B9AE4DC19A347A92E0 /* Pods-defaults-iOSNights2019UITests.debug (development).xcconfig */;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = VKFK92G6KE;
 				INFOPLIST_FILE = iOSNights2019UITests/Info.plist;
@@ -958,7 +955,6 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 2DA0C7FF30FBAFF15911FBA9 /* Pods-defaults-iOSNights2019UITests.release (development).xcconfig */;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = VKFK92G6KE;
 				INFOPLIST_FILE = iOSNights2019UITests/Info.plist;
