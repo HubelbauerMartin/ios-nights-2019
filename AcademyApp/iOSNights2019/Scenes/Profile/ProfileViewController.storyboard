@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="6q0-Gc-VOo">
-    <device id="retina4_7" orientation="portrait">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="6q0-Gc-VOo">
+    <device id="ipad10_5" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
         <capability name="Named colors" minToolsVersion="9.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -16,30 +16,30 @@
             <objects>
                 <viewController id="6q0-Gc-VOo" customClass="ProfileViewController" customModule="iOSNights2019" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="1Hg-4M-dAo">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="834" height="1062"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="6lK-Ky-oLJ" userLabel="topView">
-                                <rect key="frame" x="20" y="65" width="335" height="55"/>
+                                <rect key="frame" x="20" y="503.5" width="250" height="55"/>
                                 <subviews>
                                     <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="icon-profile-placeholder" translatesAutoresizingMaskIntoConstraints="NO" id="7cu-v0-cct" userLabel="imgProfilePic">
                                         <rect key="frame" x="0.0" y="0.0" width="55" height="55"/>
                                     </imageView>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" verticalHuggingPriority="251" horizontalCompressionResistancePriority="749" text="Tim Apple" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="agj-WC-um0" userLabel="lblName">
-                                        <rect key="frame" x="75" y="17" width="185" height="21"/>
+                                        <rect key="frame" x="75" y="17" width="100" height="21"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                         <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Mix-T5-zQp" userLabel="btnSettings">
-                                        <rect key="frame" x="280" y="0.0" width="55" height="55"/>
+                                        <rect key="frame" x="195" y="0.0" width="55" height="55"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="55" id="OBE-3b-37g"/>
                                             <constraint firstAttribute="width" constant="55" id="sd1-ir-nyT"/>
                                         </constraints>
                                         <state key="normal" image="icon-settings"/>
                                         <connections>
-                                            <action selector="settingAction" destination="6q0-Gc-VOo" eventType="touchUpInside" id="A13-9L-5f8"/>
+                                            <action selector="moreButtonTapped:" destination="6q0-Gc-VOo" eventType="touchUpInside" id="noL-Nq-wW0"/>
                                         </connections>
                                     </button>
                                 </subviews>
@@ -59,12 +59,29 @@
                         </subviews>
                         <color key="backgroundColor" name="screenBackground"/>
                         <constraints>
+                            <constraint firstItem="6lK-Ky-oLJ" firstAttribute="width" secondItem="1Hg-4M-dAo" secondAttribute="width" multiplier="0.3" id="BRa-k1-CKe"/>
                             <constraint firstItem="6lK-Ky-oLJ" firstAttribute="top" secondItem="8GE-xy-fie" secondAttribute="top" constant="45" id="cMr-Zn-BkF"/>
+                            <constraint firstItem="6lK-Ky-oLJ" firstAttribute="centerY" secondItem="1Hg-4M-dAo" secondAttribute="centerY" id="d5r-oY-xB8"/>
                             <constraint firstItem="8GE-xy-fie" firstAttribute="trailing" secondItem="6lK-Ky-oLJ" secondAttribute="trailing" constant="20" id="n7u-uQ-FT6"/>
                             <constraint firstItem="6lK-Ky-oLJ" firstAttribute="leading" secondItem="8GE-xy-fie" secondAttribute="leading" constant="20" id="t2N-IF-VHu"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="8GE-xy-fie"/>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="BRa-k1-CKe"/>
+                                <exclude reference="d5r-oY-xB8"/>
+                            </mask>
+                        </variation>
+                        <variation key="widthClass=regular">
+                            <mask key="constraints">
+                                <exclude reference="n7u-uQ-FT6"/>
+                                <include reference="BRa-k1-CKe"/>
+                                <exclude reference="cMr-Zn-BkF"/>
+                                <include reference="d5r-oY-xB8"/>
+                            </mask>
+                        </variation>
                     </view>
+                    <extendedEdge key="edgesForExtendedLayout"/>
                     <tabBarItem key="tabBarItem" title="Profile" image="icon-profile-inactive" selectedImage="icon-profile-active" id="taI-2o-cze"/>
                     <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
                 </viewController>

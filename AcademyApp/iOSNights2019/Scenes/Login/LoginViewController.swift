@@ -10,9 +10,9 @@ import UIKit
 
 class LoginViewController: UIViewController {
     // MARK: - UI
+    @IBOutlet private var scrollView: UIScrollView!
     @IBOutlet private var emailTextField: UITextField!
     @IBOutlet private var passwordTextField: TextField!
-    @IBOutlet private var doneBottomButtonConstraint: NSLayoutConstraint!
     @IBOutlet private var doneButton: DoneButton!
     @IBOutlet private var revealPasswordButton: RevealButton!
 
@@ -39,6 +39,12 @@ class LoginViewController: UIViewController {
 
         debugPrint(EnvironmentConfiguration.current)
         setupUI()
+    }
+
+    override func viewWillTransition(to size: CGSize, with coordinator: UIViewControllerTransitionCoordinator) {
+        super.viewWillTransition(to: size, with: coordinator)
+
+        print(size)
     }
 
     deinit {
@@ -97,6 +103,8 @@ private extension LoginViewController {
         // Reveal button
         revealPasswordButton.isHidden = true
         revealPasswordButton.setState(.show)
+
+        scrollView.delegate = self
     }
 
     @objc func didTapOnView() {
@@ -115,13 +123,17 @@ private extension LoginViewController {
         guard let keyboardSize = notification.userInfo?[UIResponder.keyboardFrameEndUserInfoKey] as? CGRect else {
             return
         }
-        doneBottomButtonConstraint.constant = keyboardSize.height + doneButtonBottomPaddingKeyboardUp - view.safeAreaInsets.bottom
+        updateContent(forKeyboardHeigth: keyboardSize.height)
         view.layoutIfNeeded()
     }
 
     @objc func keyboardWillHide() {
-        doneBottomButtonConstraint.constant = doneButtonBottomPaddingKeyboardDown
+        updateContent(forKeyboardHeigth: 0)
         view.layoutIfNeeded()
+    }
+
+    func updateContent(forKeyboardHeigth height: CGFloat) {
+        scrollView.contentInset.bottom = height
     }
 
     @objc func didChangeInput() {
@@ -139,5 +151,12 @@ extension LoginViewController: UITextFieldDelegate {
             passwordTextField.resignFirstResponder()
         }
         return true
+    }
+}
+
+// MARK: - UIScrollViewDelegate
+extension LoginViewController: UIScrollViewDelegate {
+    func scrollViewDidScroll(_ scrollView: UIScrollView) {
+        print("Offset - \(scrollView.contentOffset)")
     }
 }

@@ -4,8 +4,9 @@ inhibit_all_warnings!
 abstract_target 'defaults' do
   use_frameworks!
 
-  pod 'SwiftLint', '~> 0.30.1'
+  pod 'SwiftLint', '~> 0.31'
   pod 'SwiftFormat/CLI', '~> 0.38.0'
+  pod 'AlamofireImage', '~> 3.5'
 
   # App
 

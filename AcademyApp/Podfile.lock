@@ -1,20 +1,28 @@
 PODS:
+  - Alamofire (4.8.2)
+  - AlamofireImage (3.5.2):
+    - Alamofire (~> 4.8)
   - SwiftFormat/CLI (0.38.0)
-  - SwiftLint (0.30.1)
+  - SwiftLint (0.31.0)
 
 DEPENDENCIES:
+  - AlamofireImage (~> 3.5)
   - SwiftFormat/CLI (~> 0.38.0)
-  - SwiftLint (~> 0.30.1)
+  - SwiftLint (~> 0.31)
 
 SPEC REPOS:
   https://github.com/cocoapods/specs.git:
+    - Alamofire
+    - AlamofireImage
     - SwiftFormat
     - SwiftLint
 
 SPEC CHECKSUMS:
+  Alamofire: ae5c501addb7afdbb13687d7f2f722c78734c2d3
+  AlamofireImage: 63cfe3baf1370be6c498149687cf6db3e3b00999
   SwiftFormat: 0762bc591b9f6e8efa99402e714a03ede5151656
-  SwiftLint: a54bf1fe12b55c68560eb2a7689dfc81458508f7
+  SwiftLint: 7a0227733d786395817373b2d0ca799fd0093ff3
 
-PODFILE CHECKSUM: e08a2e7b80ec8bb1d8c1298f1d28e595c57424c5
+PODFILE CHECKSUM: 884ec211020b019294c130a1d6de6e9475f0f06a
 
 COCOAPODS: 1.6.1

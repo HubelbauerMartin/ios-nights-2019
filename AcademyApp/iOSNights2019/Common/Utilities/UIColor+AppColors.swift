@@ -38,4 +38,9 @@ extension UIColor {
         // swiftlint:disable:next force_unwrapping
         return UIColor(named: "tabBarBackground")!
     }
+
+    static var appWhiteText: UIColor {
+        // swiftlint:disable:next force_unwrapping
+        return UIColor(named: "whiteText")!
+    }
 }

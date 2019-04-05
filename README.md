@@ -49,6 +49,8 @@ Navigate user through your app according to human interface guidelines
 
 Organize app contents in tables and make the app look great on both iPhones and iPads
 
+- [Slides](05-Advanced-UIKit)
+
 ### 6. Lifecycles and architectures
 
 Organize code in logical components and learn about app states

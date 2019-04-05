@@ -24,11 +24,20 @@ class LectureViewController: UIViewController {
 
     @IBOutlet private var shadownHeightConstraint: NSLayoutConstraint!
 
+    // swiftlint:disable:next implicitly_unwrapped_optional
+    var lecture: Lecture!
+
     // MARK: - Object lifecycle
     override func viewDidLoad() {
         super.viewDidLoad()
 
         setupUI()
+    }
+
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+
+        navigationController?.setNavigationBarHidden(false, animated: true)
     }
 }
 
@@ -36,6 +45,8 @@ private extension LectureViewController {
     // MARK: - Appearance
 
     func setupUI() {
+        lblTitle.text = lecture.name.uppercased()
+
         contentControl.setTitleTextAttributes([NSAttributedString.Key.foregroundColor: UIColor.white], for: .selected)
         txtContent.textContainerInset = UIEdgeInsets(top: 20, left: 0, bottom: shadownHeightConstraint.constant, right: 0)
     }
