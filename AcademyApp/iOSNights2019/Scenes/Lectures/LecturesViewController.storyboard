@@ -37,37 +37,29 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="LECTURES" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WSw-WF-z8o" userLabel="lblTitle">
-                                <rect key="frame" x="136.5" y="329" width="102.5" height="24"/>
-                                <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
-                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="A9P-sc-s8N" userLabel="btnDetail">
-                                <rect key="frame" x="166" y="373" width="43" height="30"/>
-                                <state key="normal" title="Swift I">
-                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                </state>
-                                <connections>
-                                    <action selector="lectureDetailAction" destination="STb-oe-6RY" eventType="touchUpInside" id="JH6-qf-mP5"/>
-                                </connections>
-                            </button>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="Wli-Eo-8dS">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </tableView>
                         </subviews>
                         <color key="backgroundColor" name="screenBackground"/>
                         <constraints>
-                            <constraint firstItem="A9P-sc-s8N" firstAttribute="top" secondItem="WSw-WF-z8o" secondAttribute="bottom" constant="20" id="7Pt-4G-1Qf"/>
-                            <constraint firstItem="WSw-WF-z8o" firstAttribute="centerY" secondItem="0hM-TR-YSh" secondAttribute="centerY" id="KEz-DB-bAT"/>
-                            <constraint firstItem="A9P-sc-s8N" firstAttribute="centerX" secondItem="0hM-TR-YSh" secondAttribute="centerX" id="Mrc-9o-mSE"/>
-                            <constraint firstItem="WSw-WF-z8o" firstAttribute="centerX" secondItem="0hM-TR-YSh" secondAttribute="centerX" id="qp2-YV-Gan"/>
+                            <constraint firstAttribute="bottom" secondItem="Wli-Eo-8dS" secondAttribute="bottom" id="Bd3-Yj-Y5h"/>
+                            <constraint firstItem="Wli-Eo-8dS" firstAttribute="leading" secondItem="0hM-TR-YSh" secondAttribute="leading" id="Jfv-ka-wv9"/>
+                            <constraint firstItem="Wli-Eo-8dS" firstAttribute="trailing" secondItem="0hM-TR-YSh" secondAttribute="trailing" id="TaY-69-PHj"/>
+                            <constraint firstItem="Wli-Eo-8dS" firstAttribute="top" secondItem="v5L-ne-MAa" secondAttribute="top" id="UVh-dr-Kfa"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="0hM-TR-YSh"/>
                     </view>
                     <navigationItem key="navigationItem" id="XpE-no-6dj"/>
                     <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
+                    <connections>
+                        <outlet property="tableView" destination="Wli-Eo-8dS" id="9bs-Nn-5Dr"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="8VD-zF-x5J" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="92" y="-133"/>
+            <point key="canvasLocation" x="92" y="-133.5832083958021"/>
         </scene>
     </scenes>
     <resources>

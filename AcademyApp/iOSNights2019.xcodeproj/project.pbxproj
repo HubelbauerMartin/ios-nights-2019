@@ -23,6 +23,13 @@
 		929526C50E148D989230183D /* Pods_defaults_iOSNights2019Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 935DD72DA430006C5390863A /* Pods_defaults_iOSNights2019Tests.framework */; };
 		C11C9D7022563C5F00C80639 /* String+Validations.swift in Sources */ = {isa = PBXBuildFile; fileRef = C11C9D6F22563C5F00C80639 /* String+Validations.swift */; };
 		C11C9D75225644DC00C80639 /* DoneButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BF302CC22441F260058E3F3 /* DoneButton.swift */; };
+		C11C9D7922566FE800C80639 /* LectureCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C11C9D7722566FE800C80639 /* LectureCell.swift */; };
+		C11C9D7A22566FE800C80639 /* LectureCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = C11C9D7822566FE800C80639 /* LectureCell.xib */; };
+		C11C9D7C2256730000C80639 /* Lecture.swift in Sources */ = {isa = PBXBuildFile; fileRef = C11C9D7B2256730000C80639 /* Lecture.swift */; };
+		C11C9D7E2256773C00C80639 /* UITableView+ReuseIdentifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = C11C9D7D2256773C00C80639 /* UITableView+ReuseIdentifier.swift */; };
+		C11C9D80225677E100C80639 /* NibNameIdentifiable.swift in Sources */ = {isa = PBXBuildFile; fileRef = C11C9D7F225677E100C80639 /* NibNameIdentifiable.swift */; };
+		C11C9D8222567E5D00C80639 /* LectureHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C11C9D8122567E5D00C80639 /* LectureHeaderView.swift */; };
+		C11C9D8422567E6E00C80639 /* LectureHeaderView.xib in Resources */ = {isa = PBXBuildFile; fileRef = C11C9D8322567E6E00C80639 /* LectureHeaderView.xib */; };
 		C1607B18225287C300CCB9A7 /* Maison Neue Demi.otf in Resources */ = {isa = PBXBuildFile; fileRef = C1607B13225287C300CCB9A7 /* Maison Neue Demi.otf */; };
 		C1607B19225287C300CCB9A7 /* Maison Neue Medium.otf in Resources */ = {isa = PBXBuildFile; fileRef = C1607B14225287C300CCB9A7 /* Maison Neue Medium.otf */; };
 		C1607B1A225287C300CCB9A7 /* Maison Neue Book.otf in Resources */ = {isa = PBXBuildFile; fileRef = C1607B15225287C300CCB9A7 /* Maison Neue Book.otf */; };
@@ -97,6 +104,13 @@
 		C0777C29FF8981738D53E485 /* Pods-defaults-iOSNights2019Tests.release (production).xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-defaults-iOSNights2019Tests.release (production).xcconfig"; path = "Pods/Target Support Files/Pods-defaults-iOSNights2019Tests/Pods-defaults-iOSNights2019Tests.release (production).xcconfig"; sourceTree = "<group>"; };
 		C11C9D6F22563C5F00C80639 /* String+Validations.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Validations.swift"; sourceTree = "<group>"; };
 		C11C9D72225641A800C80639 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/LoginViewController.strings; sourceTree = "<group>"; };
+		C11C9D7722566FE800C80639 /* LectureCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LectureCell.swift; sourceTree = "<group>"; };
+		C11C9D7822566FE800C80639 /* LectureCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LectureCell.xib; sourceTree = "<group>"; };
+		C11C9D7B2256730000C80639 /* Lecture.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = Lecture.swift; path = iOSNights2019/Views/Lecture/Lecture.swift; sourceTree = SOURCE_ROOT; };
+		C11C9D7D2256773C00C80639 /* UITableView+ReuseIdentifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITableView+ReuseIdentifier.swift"; sourceTree = "<group>"; };
+		C11C9D7F225677E100C80639 /* NibNameIdentifiable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NibNameIdentifiable.swift; sourceTree = "<group>"; };
+		C11C9D8122567E5D00C80639 /* LectureHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LectureHeaderView.swift; sourceTree = "<group>"; };
+		C11C9D8322567E6E00C80639 /* LectureHeaderView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LectureHeaderView.xib; sourceTree = "<group>"; };
 		C1607B13225287C300CCB9A7 /* Maison Neue Demi.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Maison Neue Demi.otf"; sourceTree = "<group>"; };
 		C1607B14225287C300CCB9A7 /* Maison Neue Medium.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Maison Neue Medium.otf"; sourceTree = "<group>"; };
 		C1607B15225287C300CCB9A7 /* Maison Neue Book.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Maison Neue Book.otf"; sourceTree = "<group>"; };
@@ -266,6 +280,7 @@
 		2FB7A6312215C0F5004E6911 /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				C11C9D7B2256730000C80639 /* Lecture.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -328,6 +343,7 @@
 		4BF302C6224412C10058E3F3 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				C11C9D7622566FAC00C80639 /* Lecture */,
 				C11C9D742256427F00C80639 /* Login */,
 			);
 			path = Views;
@@ -338,6 +354,8 @@
 			children = (
 				4BF302CA2244164A0058E3F3 /* UIColor+AppColors.swift */,
 				C11C9D6F22563C5F00C80639 /* String+Validations.swift */,
+				C11C9D7D2256773C00C80639 /* UITableView+ReuseIdentifier.swift */,
+				C11C9D7F225677E100C80639 /* NibNameIdentifiable.swift */,
 			);
 			path = Utilities;
 			sourceTree = "<group>";
@@ -358,6 +376,17 @@
 				4BF0A298224CD95600A91666 /* RevealButton.swift */,
 			);
 			path = Login;
+			sourceTree = "<group>";
+		};
+		C11C9D7622566FAC00C80639 /* Lecture */ = {
+			isa = PBXGroup;
+			children = (
+				C11C9D7722566FE800C80639 /* LectureCell.swift */,
+				C11C9D7822566FE800C80639 /* LectureCell.xib */,
+				C11C9D8122567E5D00C80639 /* LectureHeaderView.swift */,
+				C11C9D8322567E6E00C80639 /* LectureHeaderView.xib */,
+			);
+			path = Lecture;
 			sourceTree = "<group>";
 		};
 		CB09D9E1224D55E4002538E4 /* Shared */ = {
@@ -425,6 +454,7 @@
 				2FB7A5D72215610F004E6911 /* Frameworks */,
 				2FB7A5D82215610F004E6911 /* Resources */,
 				C11C9D6E22563BA600C80639 /* Run Script - SwiftLint */,
+				D70E4D4A1C0D4C1C1FFF3E54 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -443,6 +473,7 @@
 				2FB7A5EA22156110004E6911 /* Sources */,
 				2FB7A5EB22156110004E6911 /* Frameworks */,
 				2FB7A5EC22156110004E6911 /* Resources */,
+				ADB35B77EA897F1E23AB2C23 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -462,6 +493,7 @@
 				2FB7A5F522156110004E6911 /* Sources */,
 				2FB7A5F622156110004E6911 /* Frameworks */,
 				2FB7A5F722156110004E6911 /* Resources */,
+				31489773C9F22BE1BA1EE87A /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -527,6 +559,8 @@
 			files = (
 				C1607B1B225287C300CCB9A7 /* Maison Neue Bold.otf in Resources */,
 				C1607B19225287C300CCB9A7 /* Maison Neue Medium.otf in Resources */,
+				C11C9D8422567E6E00C80639 /* LectureHeaderView.xib in Resources */,
+				C11C9D7A22566FE800C80639 /* LectureCell.xib in Resources */,
 				C1607B18225287C300CCB9A7 /* Maison Neue Demi.otf in Resources */,
 				C1607B1A225287C300CCB9A7 /* Maison Neue Book.otf in Resources */,
 				2FB7A5E822156110004E6911 /* LaunchScreen.storyboard in Resources */,
@@ -598,6 +632,30 @@
 			shellPath = /bin/sh;
 			shellScript = "podSwiftformat=\"${PODS_ROOT}/SwiftFormat/CommandLineTool/swiftformat\"\n\nif [ -f \"$podSwiftformat\" ]; then\n    $podSwiftformat .\nelse\n    echo \"warning: Cannot find SwiftFormat in the expected Cocoapods location.\"\nfi\n";
 		};
+		31489773C9F22BE1BA1EE87A /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-defaults-iOSNights2019UITests/Pods-defaults-iOSNights2019UITests-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/AlamofireImage/AlamofireImage.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AlamofireImage.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-defaults-iOSNights2019UITests/Pods-defaults-iOSNights2019UITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 		93DD869C69A09FFDBD6EE5B8 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -620,6 +678,30 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
+		ADB35B77EA897F1E23AB2C23 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-defaults-iOSNights2019Tests/Pods-defaults-iOSNights2019Tests-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/AlamofireImage/AlamofireImage.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AlamofireImage.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-defaults-iOSNights2019Tests/Pods-defaults-iOSNights2019Tests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 		C11C9D6E22563BA600C80639 /* Run Script - SwiftLint */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -637,6 +719,30 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "\"${PODS_ROOT}/SwiftLint/swiftlint\"\n";
+		};
+		D70E4D4A1C0D4C1C1FFF3E54 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-defaults-iOSNights2019/Pods-defaults-iOSNights2019-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/AlamofireImage/AlamofireImage.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AlamofireImage.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-defaults-iOSNights2019/Pods-defaults-iOSNights2019-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
 		};
 		F282E9491DBD87F03806C263 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
@@ -667,17 +773,22 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C11C9D8222567E5D00C80639 /* LectureHeaderView.swift in Sources */,
 				C11C9D75225644DC00C80639 /* DoneButton.swift in Sources */,
 				2FB7A62D2215BD3D004E6911 /* LoginViewController.swift in Sources */,
 				CB4E48D1224D4553003F0DE9 /* LectureViewController.swift in Sources */,
+				C11C9D7E2256773C00C80639 /* UITableView+ReuseIdentifier.swift in Sources */,
 				CB4E48CC224D4256003F0DE9 /* LecturesViewController.swift in Sources */,
 				2FB7A62722156D8B004E6911 /* EnvironmentConfiguration.swift in Sources */,
 				CB09D9E6224D57C8002538E4 /* RootCoordinator.swift in Sources */,
 				4BF302CB2244164A0058E3F3 /* UIColor+AppColors.swift in Sources */,
 				2FB7A5DE2215610F004E6911 /* AppDelegate.swift in Sources */,
 				C11C9D7022563C5F00C80639 /* String+Validations.swift in Sources */,
+				C11C9D7922566FE800C80639 /* LectureCell.swift in Sources */,
 				4BF0A299224CD95600A91666 /* RevealButton.swift in Sources */,
+				C11C9D80225677E100C80639 /* NibNameIdentifiable.swift in Sources */,
 				CB09D9E3224D5628002538E4 /* BlankNavigationViewController.swift in Sources */,
+				C11C9D7C2256730000C80639 /* Lecture.swift in Sources */,
 				CB4E48C2224D400D003F0DE9 /* TabBarViewController.swift in Sources */,
 				4BF302C8224412D50058E3F3 /* TextField.swift in Sources */,
 				CB4E48C8224D4228003F0DE9 /* ProfileViewController.swift in Sources */,
