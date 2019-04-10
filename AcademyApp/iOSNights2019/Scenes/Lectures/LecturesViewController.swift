@@ -35,7 +35,7 @@ class LecturesViewController: UIViewController {
 private extension LecturesViewController {
     func setupUI() {
         tableView.register(LectureCell.nib, forCellReuseIdentifier: LectureCell.reuseIdentifer)
-
+        tableView.register(UINib(nibName: "LectureHeaderView", bundle: nil), forHeaderFooterViewReuseIdentifier: "Header")
         tableView.dataSource = self
         tableView.delegate = self
     }
@@ -85,8 +85,12 @@ extension LecturesViewController: UITableViewDelegate {
         showDetail(for: lecture)
     }
 
-    func tableView(_: UITableView, viewForHeaderInSection _: Int) -> UIView? {
-        // TODO: Dequeue
-        return nil
+    func tableView(_ tableView: UITableView, viewForHeaderInSection _: Int) -> UIView? {
+        let cell = tableView.dequeueReusableHeaderFooterView(withIdentifier: "Header")
+        return cell
+    }
+
+    func tableView(_: UITableView, heightForHeaderInSection _: Int) -> CGFloat {
+        return 70.0
     }
 }
